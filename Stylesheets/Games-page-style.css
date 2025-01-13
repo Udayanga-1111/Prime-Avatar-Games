@@ -7,6 +7,7 @@
     --accent-color: rgb(82, 220, 238);
 
     --Title-font: "Audiowide", serif;
+    --Title-shadow: 2px 2px var(--subback-color);
 }
 
 body{
@@ -17,12 +18,56 @@ body{
     background-repeat: no-repeat;
 }
 
+main{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+/*=====Slideshow part=========================================================*/
+
+.slideshow{
+    width: 100vw;
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1/2;
+}
+
+#top-title{
+    font-family: var(--Title-font);
+    text-shadow: var(--Title-shadow);
+    font-size: 4vw;
+}
+
+.container{
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    width: 98vw;
+    height: 37vw;
+    scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.container div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1 0 100%;
+    animation: slider 33s infinite ease-out;
+    animation-play-state: running;
+}
 
 /*=====Games part=============================================================*/
 .games{
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-row: 2/3;
 }
 
 .catagories{
@@ -63,6 +108,7 @@ body{
     background-repeat: no-repeat;
     position: relative;
     
+    border: 2px rgba(255, 255, 255, 0.459) solid;
 
 }
 
@@ -77,6 +123,7 @@ body{
     flex-wrap: wrap;
     
 }
+
 h4{
     font-size: 20px;
 }
@@ -88,9 +135,9 @@ h4{
 .description{
     position: absolute;
     z-index: 1;
-    width: 16vw;
-    min-width: 175px;
-    min-height: 180px;
+    width: 15.8vw;
+    min-width: 170px;
+    min-height: 170px;
     height: 17vw;
     background-color: rgba(0, 0, 0, 0.699);
     backdrop-filter: blur(5px);
@@ -99,7 +146,12 @@ h4{
     padding: 10px;
     font-size:.9vw;
     border-radius: 0 0 10px 10px;
+    overflow-y: scroll;
 
+}
+
+.description::-webkit-scrollbar{
+    display: none;
 }
 
 @keyframes fade-in {
@@ -122,7 +174,7 @@ h4{
     
     animation: fade-in .4s;
     display: block;
-    
+    cursor: pointer;
 }
 
 .card:hover{
@@ -138,8 +190,13 @@ h4{
         padding: 1vw;
     }
 
+    #top-title{
+        font-size: 25px;
+    }
+
     .game-name{
-        font-size: 20px;
+        font-size: 15px;
+        text-align: center;
     }
     
     .description{
@@ -150,14 +207,187 @@ h4{
         display: block;
         font-size: 14px;
     }
+
+    .catagories h4{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+    .catagories h1{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media (max-width:400px) {
+    .card{
+        width: 160px;
+        min-width: 160px;
+        height: 200px;
+        min-height: 225px;
+    }
+
+    .description{
+        width: 159px;
+        min-width: 159px;
+        height: 150px;
+        min-height: 150px;
+    }
+
 }
 
 /*=====Games Images section===================================================*/
 
+/*===Action===*/
 #Delta-Force{
-    background-image: url(./Images/Games/Delta\ Force.jpg);
+    background-image: url(./Images/Games/Delta-Force.webp);
 }
 
-#Kingdom-Come{
-    background-image: url(./Images/Games/Kingdom_Come-Deliverance.jpeg);
+#black-myth-wukong{
+    background-image: url(./Images/Games/black-myth-wukong.webp);
 }
+
+#Fortnite{
+    background-image: url(./Images/Games/Fortnite.webp);
+}
+
+#GTA-V{
+    background-image: url(./Images/Games/GTA-V.webp);
+}
+
+
+/*===RPG===*/
+
+#Kingdom-Come{
+    background-image: url(./Images/Games/Kingdom_Come-Deliverance.webp);
+}
+
+#Firelight-Fantacy{
+    background-image: url(./Images/Games/firelight-fantasy-vengeance.webp);
+}
+
+#COMA{
+    background-image: url(./Images/Games/coma-online.webp);
+}
+
+#Lindwyrm{
+    background-image: url(./Images/Games/lindwyrm.webp);
+}
+
+/*===Racing===*/
+
+#Torque-Dirft2{
+    background-image: url(./Images/Games/Torque-Drift-2.webp);
+}
+
+#WRC{
+    background-image: url(./Images/Games/EA-Sports-WRC.webp);
+}
+
+#NFS-Most-Wanted{
+    background-image: url(./Images/Games/need-for-speed-most-wanted.webp);
+}
+
+#Asphalt-8{
+    background-image: url(./Images/Games/asphalt-8.webp);
+}
+
+/*=====Slideshow Images=======================================================*/
+
+#game1{
+    background-image: url(./Images/Games/delta-force-landscape.webp);
+    background-position: bottom;
+}
+
+#game2{
+    background-image: url(./Images/Games/Kingdome-come-\ delivarence-landscape.webp);
+    background-position: center;
+}
+
+#game3{
+    background-image: url(./Images/Games/black-myth-wukong-landscape.webp);
+    background-position: top;
+}
+
+#game4{
+    background-image: url(./Images/Games/need-for-speed-most-wanted-lanscape.webp);
+    background-position: top;
+}
+
+#game5{
+    background-image: url(./Images/Games/WRC_lanscape.webp);
+    background-position: bottom;
+}
+
+/*=====Animations=============================================================*/
+
+@keyframes slider {
+
+    0%,5%{
+        transform: translateX(0);
+    }
+
+    5%,10%{
+        transform: translateX(0);
+    }
+
+    10%,15%{
+        transform: translateX(-100%);
+    }
+
+    15%,20%{
+        transform: translateX(-100%);
+    }
+
+    20%,25%{
+        transform: translateX(-200%);
+    }
+
+    25%,30%{
+        transform: translateX(-200%);
+    }
+
+    30%,35%{
+        transform: translateX(-300%);
+    }
+
+    35%,45%{
+        transform: translateX(-300%);
+
+    }
+
+    45%,50%{
+        transform: translateX(-400%);
+    }
+
+    50%,60%{
+        transform: translateX(-400%);
+    }
+
+    60%,65%{
+        transform: translateX(-300%);
+    }
+
+    65%,75%{
+        transform: translateX(-300%);
+    }
+
+    75%,80%{
+        transform: translateX(-200%);
+    }
+
+    80%,85%{
+        transform: translateX(-200%);
+    }
+
+    85%,90%{
+        transform: translateX(-100%);
+    }
+
+    90%,95%{
+        transform: translateX(-100%);
+    }
+
+    95%,100%{
+        transform: translateX(0);
+    }
