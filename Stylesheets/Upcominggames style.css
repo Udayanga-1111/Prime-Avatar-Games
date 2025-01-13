@@ -229,7 +229,7 @@ h2{
     color: white;
 }
 
-#Action-catagory, #Racing-catagory{
+#Action-catagory, #RPG-catagory{
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -265,6 +265,11 @@ h2{
 
     display: none;
 
+}
+
+.card-details h2{
+    font-size: 25px;
+    text-align: center;
 }
 
 /*=====Animations=============================================================*/
@@ -370,4 +375,38 @@ h2{
         color: white;
     }
 
+}
+
+/*=====Game Images============================================================*/
+
+#Splitgate-2{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/splitgate-2.webp);
+}
+
+#Chains-of-Freedom{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/chains-of-freedom.webp);
+}
+
+#SA-Cobra{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/space-adventure-cobra--the-awakening.webp);
+}
+
+#G-rebels{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/G-rebels.webp);
+}
+
+#Wuchang{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/wuchang-fallen-feathers.webp);
+}
+
+#AI-LIMIT{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/ai-limit.webp);
+}
+
+#Soulmask{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/soulmask.webp);
+}
+
+#Kingdom-Come-D-II{
+    background-image: url(./Upcoming-Games-Page-images/Kingdome-Come-Deliverence-II/Kingdom_Come_Deliverance_II_image.webp);
 }
