@@ -19,11 +19,25 @@ body{
 
 
 /*=====Games part=============================================================*/
+.games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .catagories{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content;
+}
+
+.catagories a{
+    width: 100%;
+}
+
+.catagories a:hover{
+    color: var(--accent-color);
 }
 
 .catagory-name{
@@ -31,7 +45,7 @@ body{
     font-size: 3vw;
 }
 
-.action-catagory{
+.action-catagory, .RPG-catagory, .Racing-catagory{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -40,7 +54,6 @@ body{
 }
 
 .card{
-    background-image:url(./Upcoming-Games-Page-images/AVOWED/Avowed_Image.webp);
     width: 16vw;
     min-width: 175px;
     height: 23vw;
@@ -56,7 +69,7 @@ body{
 .card-details{
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, var(--color1), rgba(19,21,21,.8),rgba(19,21,21,.7),transparent,transparent);
+    background: linear-gradient(0deg, Black, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.7),transparent,transparent);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -77,8 +90,8 @@ h4{
     z-index: 1;
     width: 16vw;
     min-width: 175px;
-    min-height: 190px;
-    height: 18vw;
+    min-height: 180px;
+    height: 17vw;
     background-color: rgba(0, 0, 0, 0.699);
     backdrop-filter: blur(5px);
     transform: translateX();
@@ -137,4 +150,14 @@ h4{
         display: block;
         font-size: 14px;
     }
+}
+
+/*=====Games Images section===================================================*/
+
+#Delta-Force{
+    background-image: url(./Images/Games/Delta\ Force.jpg);
+}
+
+#Kingdom-Come{
+    background-image: url(./Images/Games/Kingdom_Come-Deliverance.jpeg);
 }
