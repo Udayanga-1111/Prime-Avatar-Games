@@ -84,7 +84,7 @@ main{
 }
 
 .store-nav a{
-    width: 500px;
+    width: 400px;
     padding: 20px;
     position: absolute;
 
@@ -104,7 +104,7 @@ main{
     clip-path: polygon(0 0, 0 100%, 90% 100%, 100% 0);
     transform: translateX(-46%);
     background-color: var(--subback-color);
-    border: 2px var(--color1) solid;
+    border: 2px var(--subback-color) solid;
 }
 
 #peri-nav{
@@ -114,7 +114,7 @@ main{
     background-color: rgba(0, 0, 0, 0.438);
     backdrop-filter: blur(9px);
     border: 2px var(--subback-color) solid;
-    
+
 }
 
 /*=====Store items Part=======================================================*/
@@ -139,6 +139,13 @@ main{
     text-shadow: var(--Title-shadow);
 }
 
+.item-slot  #shop-more{
+    text-align: center;
+    color: var(--accent-color);
+    text-decoration:underline ;
+    font-size: 20px;
+}
+
 .item-list{
     display: flex;
     grid-row: 2/3;
@@ -155,7 +162,42 @@ main{
     height: 15vw;
     border: 2px solid;
     border-radius: 15px;
+    display: flex;
+    gap: 10px;
 
+    background-color: rgba(0, 0, 0, 0.397);
+    backdrop-filter: blur(9px);
+}
+
+.item-name{
+    font-size: 1.6vw;
+    font-family: var(--Title-font);
+}
+
+.item-details{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .item-pic{
+    width: 45%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.price{
+    font-weight: 300;
+}
+
+.card:hover{
+    scale: 1.03;
+    transition: .2s ease-in-out;
+}
+
+.item-name:hover{
+    color: var(--accent-color);
 }
 
 /*=====Media Queries==========================================================*/
@@ -173,6 +215,26 @@ main{
     .card{
         width: 175px;
         height: 225px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .card .item-pic{
+        width: 175px;
+        height: 75%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .item-name{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .price{
+        display: block;
+        font-size: 13px;
+        text-align: center;
     }
 
 
@@ -191,31 +253,30 @@ main{
     }
 }
 
-
 /*=====Slideshow Images=======================================================*/
 
 #game1{
-    background-image: url(./Images/Games/delta-force-landscape.webp);
-    background-position: bottom;
+    background-image: url(./Images/Console-Images/Discounts.webp);
+    background-position: bottom left;
 }
 
 #game2{
-    background-image: url(./Images/Games/Kingdome-come-\ delivarence-landscape.webp);
+    background-image: url(./Images/Console-Images/Xbox-Slider.jpg);
     background-position: center;
 }
 
 #game3{
-    background-image: url(./Images/Games/black-myth-wukong-landscape.webp);
-    background-position: top;
+    background-image: url(./Images/Console-Images/Price-Drop-Alert-Web-Banner-Compressed\ \(1\).webp);
+    background-position: top left;
 }
 
 #game4{
-    background-image: url(./Images/Games/need-for-speed-most-wanted-lanscape.webp);
+    background-image: url(./Images/Console-Images/Peri-Discount.jpg);
     background-position: top;
 }
 
 #game5{
-    background-image: url(./Images/Games/WRC_lanscape.webp);
+    background-image: url(./Images/Console-Images/PS5-Cyber-Monday-Deals.webp);
     background-position: bottom;
 }
 

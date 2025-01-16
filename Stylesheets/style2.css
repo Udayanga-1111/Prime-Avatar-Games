@@ -281,10 +281,12 @@ footer{
     padding-left: 2vw;
     font-size: 14px;
     display: flex;
+    justify-content: center;
     gap: 5vw;
     border-top: 1px solid;
     flex-wrap: wrap;
     padding-top: 20px;
+    text-align: center;
 
 }
 
@@ -374,11 +376,13 @@ footer{
     border-bottom: 2px solid var(--text-color);
     font-size: 25px;
     width: fit-content;
-    padding-right:20px;
+    padding:0 20px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 #footer-bottom a, #footer-bottom li, .contacts{
+    text-align: center;
     font-size: 15px;
     font-weight: 700;
     padding: 0;
@@ -391,8 +395,10 @@ footer{
 
 .contacts{
     padding-top: 2vw;
-    width: fit-content;
-    padding-left: 2vw;
+    width: auto;
+    display: flex;
+    align-items: center;
+
 }
 
 .payments .pay{
@@ -415,7 +421,8 @@ footer{
 .copyright{
     display: flex;
     padding-top: 3vw;
-    padding-left: 2vw;
+    justify-content: center;
+    text-align: center;
 }
 
 .copyright a{
