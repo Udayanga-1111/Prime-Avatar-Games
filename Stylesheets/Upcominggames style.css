@@ -1,0 +1,413 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color1:black;
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+
+    --Title-font: "Audiowide", serif;
+}
+
+body{
+    background:rgba(0, 0, 0, 0.85) url(./Images/Background-images/MIX-game\ collarge.webp);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+
+}
+
+main{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+/*=====Slideshow part=========================================================*/
+
+.slideshow{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent, transparent );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:20px ;
+    grid-row: 1;
+}
+
+.top-upcoming{
+    font-family: var(--Title-font);
+}
+
+
+.div{
+    width: 98vw;
+    height: 40vw;
+    background-color: aquamarine;
+
+    position: absolute;
+    animation: slider 25s infinite;
+    animation-play-state: running;
+    opacity: 0;
+    transform: translateX(-100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+h1{
+    font-size: 70px;
+    text-shadow: 3px 3px var(--subback-color);
+}
+
+.container{
+    width: 98vw;
+    height: 40vw;
+    display: flex;
+    gap: 10px;
+    overflow-x:scroll;
+
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes slider{
+
+    0%,40%{
+        transform: translateX(100%);
+        opacity: 0;
+        display: none;
+    }
+    
+    40%,50%{
+        transform: translateX(1%);
+        opacity: 0;
+        display: none;
+    }
+
+    50%,60%{
+        opacity: 1;
+        transform: translateX(0);
+        display: block;
+    }
+
+    65%,80%{
+        transform: translateX(0);
+        opacity: 0;
+        display: block;
+    }
+
+    80%,90%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    90%,100%{
+        transform: translateX(-100%);
+        opacity: 0;
+        display: none;
+    }
+
+
+}
+
+#div1{
+    animation-delay: -15s;
+    background-image: url(./Upcoming-Games-Page-images/AVOWED/avowed-landscape.webp);
+    background-position: top;
+
+}
+
+#div2{
+    animation-delay: -10s;
+    background-image: url(./Upcoming-Games-Page-images/Hell-of-Us/HELL-is-US_landscape.webp);
+}
+
+#div3{
+    animation-delay: -5s;
+    background-image: url(./Upcoming-Games-Page-images/Kingdome-Come-Deliverence-II/Kingdom-come-DELIVERENCE_II.webp);
+    background-position: top;
+}
+
+#div4{
+    animation-delay: -0s;
+    background-image: url(./Upcoming-Games-Page-images/Monster-Hunter-Wilds/monster-hunter-wilds-gets-a-second-trailer-cover665904cdd291a.jpg);
+}
+
+#div5{
+    animation-delay: 5s;
+    background-image: url(./Upcoming-Games-Page-images/SplitGate-2/Splitgate-2-landscape.webp);
+    background-position: top;
+}
+
+.container:hover{
+    width: 98vw;
+}
+
+.container:hover .div{
+    animation: none;
+    cursor: pointer;
+    position: relative;
+    transform: translateX(0);
+    flex: 1 0 100%;
+    opacity: 1;
+    scroll-behavior: smooth;
+    
+}
+
+.top-details{
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(45deg, var(--color1),rgba(19,21,21,.7),rgba(19,21,21,.3), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 3vw;
+}
+
+.topname{
+    font-size: 3vw;
+    text-shadow: 3px 3px var(--subback-color);
+}
+
+h3{
+    font-size: 2vw;
+}
+
+/*=====intro description======================================================*/
+
+.intro-discript{
+    width: 70vw;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(59, 59, 59, 0.363);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    font-size: 1.2vw;
+    box-shadow: 1px 2px 10px var(--subback-color);
+}
+
+.intro-name{
+    text-shadow: 3px 3px var(--subback-color);
+}
+
+
+/*=====Upcoming Game part=====================================================*/
+
+.games{
+    padding:0 5vw;
+    grid-row: 2;
+}
+
+
+.catagory{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+h2{
+    font-family: var(--Title-font);
+    font-size:3vw;
+}
+
+.catagory-name{
+    text-shadow: 3px 3px var(--subback-color);
+    color: white;
+}
+
+#Action-catagory, #RPG-catagory{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border-bottom: 2px solid;
+    padding: 40px;
+
+
+}
+
+.card{
+    background: url(./Upcoming-Games-Page-images/Hell-of-Us/Hell_is_Us_Image.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 20vw;
+}
+
+.card-details{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(0deg, var(--color1), rgba(19,21,21,.5) ,transparent);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    display: none;
+
+}
+
+.card-details h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+/*=====Animations=============================================================*/
+
+
+@media (hover:hover){
+    .card:hover .card-details{
+        display: flex;
+        animation: fade-in .4s;
+    }
+    
+    .card:hover{
+        scale: 1.01;
+        transition: .2s ease-in;
+    
+    }
+}
+
+@keyframes fade-in {
+
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*=====Media Queries==========================================================*/
+
+@media (max-width:880px) {
+
+    .container{
+        width: 99vw;
+        height: 50vw;
+        margin-bottom: 30px;
+    }
+
+    .div{
+        width: 99vw;
+        height: 50vw;
+    }
+
+    .container:hover{
+        width: 95vw;
+        height: 50vw;
+    }
+
+    .div:hover{
+        width: 99vw;
+        height: 50vw;
+    }
+
+    .top-upcoming{
+        font-size: 6vw;
+    }
+
+    .topname{
+        font-size: 5vw;
+    }
+    
+    .games{
+        padding: 5px;
+    }
+    .card{
+        width: 35vw;
+        height: 45vw;
+        padding: o;
+    }
+
+    .card-details{
+        display: flex;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+        font-size: 2vw;
+        justify-content:end;
+
+        background: linear-gradient(0deg, var(--color1),
+                                rgba(19,21,21,.7),
+                                rgba(19,21,21,.3),
+                                rgba(19,21,21,.5) ,
+                                transparent);
+
+    }
+
+    .games .catagory .catagory-name{
+        font-size: 5vw;
+        color: var(--accent-color);
+    }
+
+    .catagory{
+        gap: 10px;
+    }
+
+    #Action-catagory, #Racing-catagory{
+        padding: 20px;
+
+    }
+
+    h2{
+        color: white;
+    }
+
+}
+
+/*=====Game Images============================================================*/
+
+#Splitgate-2{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/splitgate-2.webp);
+}
+
+#Chains-of-Freedom{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/chains-of-freedom.webp);
+}
+
+#SA-Cobra{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/space-adventure-cobra--the-awakening.webp);
+}
+
+#G-rebels{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/G-rebels.webp);
+}
+
+#Wuchang{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/wuchang-fallen-feathers.webp);
+}
+
+#AI-LIMIT{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/ai-limit.webp);
+}
+
+#Soulmask{
+    background-image: url(./Upcoming-Games-Page-images/Upcoming-Games/soulmask.webp);
+}
+
+#Kingdom-Come-D-II{
+    background-image: url(./Upcoming-Games-Page-images/Kingdome-Come-Deliverence-II/Kingdom_Come_Deliverance_II_image.webp);
+}

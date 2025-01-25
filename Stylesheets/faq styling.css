@@ -1,0 +1,263 @@
+*{
+    list-style: none;
+    padding: 0;
+}
+
+:root{
+    --color1: Black;
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+    --Title-font: "Audiowide", serif;
+}
+
+body{
+    background:rgba(0, 0, 0, 0.8) url(./Images/Home-Page-Images/Home-background-image.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding:20px ;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent, transparent );
+}
+
+#title-1{
+    font-family: var(--Title-font);
+    text-shadow: 2px 2px var(--subback-color);
+    font-size: 3vw;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+
+    width: 80%;
+}
+
+#content-1{
+    margin-top: 10px;
+    border: 2px solid;
+    padding: 2vw;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.sub-titles{
+    font-family: var(--Title-font);
+    text-shadow: 2px 2px var(--subback-color);
+    font-size: 2vw;
+}
+
+#answer{
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 1em;
+
+    box-shadow: 2px 4px var(--subback-color);
+}
+
+#faq{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#faq li{
+    font-size: 25px;
+    height: fit-content;
+}
+
+#faq li p a{
+    color: var(--accent-color);
+
+}
+
+
+#faq li p{
+    padding:5px;
+    font-size: 18px;
+    display: none;
+    
+}
+
+h5{
+    text-wrap: wrap;
+}
+
+
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.arrow-head svg{
+    width: 20px;
+    height: 20px;
+}
+
+/*=====Dropdown answer 1======================================================*/
+
+#drop-active{
+    display: none;
+}
+
+#drop-active:checked~ .answer{
+    display: block;
+}
+
+#drop-active:checked ~ .arrow-head svg{
+    position: relative;
+    transform: rotate(180deg);
+    transition:.2s ease-out;
+}
+
+/*=====Dropdown answer 2======================================================*/
+
+#drop-active-2{
+    display: none;
+}
+
+#drop-active-2:checked~ .answer-2{
+    display: block;
+}
+
+#drop-active-2:checked ~ .arrow-head svg{
+    position: relative;
+    transform: rotate(180deg);
+    transition:.2s ease-out;
+}
+
+/*=====Dropdown answer 3======================================================*/
+
+#drop-active-3{
+    display: none;
+}
+
+#drop-active-3:checked~ .answer-3{
+    display: block;
+}
+
+#drop-active-3:checked ~ .arrow-head svg{
+    position: relative;
+    transform: rotate(180deg);
+    transition:.2s ease-out;
+}
+
+/*===== Queries section=======================================================*/
+
+#queries{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form .inputs{
+    outline: none;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    color: rgb(104, 104, 104);
+    padding: 2px;
+    width: 30vw;
+}
+
+#queries button{
+    align-self: flex-end;
+}
+
+#queries button{
+    background-color: transparent;
+    border: 2px solid var(--subback-color);
+    border-radius: 10px;
+    padding: 0 5px;
+    color: var(--text-color);
+}
+
+hr{
+    color: aliceblue;
+    width: 100%;
+    
+}
+
+/*-----------------------Animatons----------------*/
+
+form .inputs:hover{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+form .inputs:focus{
+    background-color: transparent;
+    cursor: text;
+    color: white;
+    border-color: var(--accent-color);
+    padding: 2px;
+}
+
+#queries button:hover{
+    background-color: var(--subback-color);
+}
+
+
+/*-------------media queries-------------*/
+
+@media (max-width:880px) {
+    
+    main{
+        padding: 20px 5%;
+        font-size: 16px;
+    }
+
+    main #content{
+        width: 100%;
+    }
+
+    
+
+    #queries .inputs{
+        width: 60vw;
+    }
+
+    #title-1{
+        font-size: 5vw;
+    }
+
+    .sub-titles{
+        font-size: 4vw;
+    }
+
+    #faq li{
+        font-size:20px;
+        padding-right: 5px;
+    }
+
+    #faq li p{
+        font-size: 14px;
+    }
+}

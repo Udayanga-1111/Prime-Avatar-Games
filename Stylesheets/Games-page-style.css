@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Audiowide&family=Black+Ops+One&family=Bree+Serif&family=Odibee+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&family=Zen+Dots&display=swap');
+
+:root{
+    --color1: black;
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+
+    --Title-font: "Audiowide", serif;
+    --Title-shadow: 2px 2px var(--subback-color);
+}
+
+body{
+    background: rgba(0, 0, 0, 0.904) url(./Images/Background-images/MIX-game\ collarge.webp);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent, transparent );
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+/*=====Slideshow part=========================================================*/
+
+.slideshow{
+    width: 100vw;
+    padding: 30px 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1/2;
+}
+
+#top-title{
+    font-family: var(--Title-font);
+    text-shadow: var(--Title-shadow);
+    font-size: 4vw;
+}
+
+.container{
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    width: 98vw;
+    height: 37vw;
+    scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.container div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:1 0 100%;
+    animation: slider 33s infinite ease-out;
+    animation-play-state: running;
+}
+
+/*=====Games part=============================================================*/
+.games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 2/3;
+
+    border-top: 2px solid;
+}
+
+.catagories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.catagories a{
+    width: 100%;
+}
+
+.catagories a:hover{
+    color: var(--accent-color);
+}
+
+.catagory-name{
+    font-family: var(--Title-font);
+    font-size: 3vw;
+}
+
+.action-catagory, .RPG-catagory, .Racing-catagory{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card{
+    width: 16vw;
+    min-width: 175px;
+    height: 23vw;
+    min-height: 250px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    border: 2px rgba(255, 255, 255, 0.459) solid;
+
+}
+
+.card-details{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, Black, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.7),transparent,transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 5px;
+    flex-wrap: wrap;
+    
+}
+
+h4{
+    font-size: 20px;
+}
+
+.game-name{
+    font-family: var(--Title-font);
+}
+
+.description{
+    position: absolute;
+    z-index: 1;
+    width: 15.8vw;
+    min-width: 170px;
+    min-height: 170px;
+    height: 17vw;
+    background-color: rgba(0, 0, 0, 0.699);
+    backdrop-filter: blur(5px);
+    transform: translateX();
+    display: none;
+    padding: 10px;
+    font-size:.9vw;
+    border-radius: 0 0 10px 10px;
+    overflow-y: scroll;
+
+}
+
+.description::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+.card:hover .description{
+    
+    animation: fade-in .4s;
+    display: block;
+    cursor: pointer;
+}
+
+.card:hover{
+    scale: 1.03;
+    transition: .3s ease-out;
+}
+
+/*=====Media queries==========================================================*/
+
+@media (max-width:880px) {
+
+    main{
+        padding: 1vw;
+    }
+
+    #top-title{
+        font-size: 25px;
+    }
+
+    .game-name{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .description{
+        font-size: 10px;
+    }
+
+    .price{
+        display: block;
+        font-size: 14px;
+    }
+
+    .catagories h4{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+    .catagories h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    
+}
+
+@media (max-width:400px) {
+    .card{
+        width: 160px;
+        min-width: 160px;
+        height: 200px;
+        min-height: 225px;
+    }
+
+    .description{
+        width: 159px;
+        min-width: 159px;
+        height: 150px;
+        min-height: 150px;
+    }
+
+}
+
+/*=====Games Images section===================================================*/
+
+/*===Action===*/
+#Delta-Force{
+    background-image: url(./Images/Games/Delta-Force.webp);
+}
+
+#black-myth-wukong{
+    background-image: url(./Images/Games/black-myth-wukong.webp);
+}
+
+#Fortnite{
+    background-image: url(./Images/Games/Fortnite.webp);
+}
+
+#GTA-V{
+    background-image: url(./Images/Games/GTA-V.webp);
+}
+
+
+/*===RPG===*/
+
+#Kingdom-Come{
+    background-image: url(./Images/Games/Kingdom_Come-Deliverance.webp);
+}
+
+#Firelight-Fantacy{
+    background-image: url(./Images/Games/firelight-fantasy-vengeance.webp);
+}
+
+#COMA{
+    background-image: url(./Images/Games/coma-online.webp);
+}
+
+#Lindwyrm{
+    background-image: url(./Images/Games/lindwyrm.webp);
+}
+
+/*===Racing===*/
+
+#Torque-Dirft2{
+    background-image: url(./Images/Games/Torque-Drift-2.webp);
+}
+
+#WRC{
+    background-image: url(./Images/Games/EA-Sports-WRC.webp);
+}
+
+#NFS-Most-Wanted{
+    background-image: url(./Images/Games/need-for-speed-most-wanted.webp);
+}
+
+#Asphalt-8{
+    background-image: url(./Images/Games/asphalt-8.webp);
+}
+
+/*=====Slideshow Images=======================================================*/
+
+#game1{
+    background-image: url(./Images/Games/delta-force-landscape.webp);
+    background-position: bottom;
+}
+
+#game2{
+    background-image: url(./Images/Games/Kingdome-come-\ delivarence-landscape.webp);
+    background-position: center;
+}
+
+#game3{
+    background-image: url(./Images/Games/black-myth-wukong-landscape.webp);
+    background-position: top;
+}
+
+#game4{
+    background-image: url(./Images/Games/need-for-speed-most-wanted-lanscape.webp);
+    background-position: top;
+}
+
+#game5{
+    background-image: url(./Images/Games/WRC_lanscape.webp);
+    background-position: bottom;
+}
+
+/*=====Animations=============================================================*/
+
+@keyframes slider {
+
+    0%,5%{
+        transform: translateX(0);
+    }
+
+    5%,10%{
+        transform: translateX(0);
+    }
+
+    10%,15%{
+        transform: translateX(-100%);
+    }
+
+    15%,20%{
+        transform: translateX(-100%);
+    }
+
+    20%,25%{
+        transform: translateX(-200%);
+    }
+
+    25%,30%{
+        transform: translateX(-200%);
+    }
+
+    30%,35%{
+        transform: translateX(-300%);
+    }
+
+    35%,45%{
+        transform: translateX(-300%);
+
+    }
+
+    45%,50%{
+        transform: translateX(-400%);
+    }
+
+    50%,60%{
+        transform: translateX(-400%);
+    }
+
+    60%,65%{
+        transform: translateX(-300%);
+    }
+
+    65%,75%{
+        transform: translateX(-300%);
+    }
+
+    75%,80%{
+        transform: translateX(-200%);
+    }
+
+    80%,85%{
+        transform: translateX(-200%);
+    }
+
+    85%,90%{
+        transform: translateX(-100%);
+    }
+
+    90%,95%{
+        transform: translateX(-100%);
+    }
+
+    95%,100%{
+        transform: translateX(0);
+    }
+}

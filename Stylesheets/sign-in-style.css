@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Audiowide&family=Black+Ops+One&family=Bree+Serif&family=Odibee+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&family=Zen+Dots&display=swap');
+
+:root{
+    --color1: rgb(19, 21, 21);
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+
+    --Title-font: "Audiowide", serif;
+    --Title-shadow: 2px 2px var(--subback-color);
+}
+
+body{
+    background:rgba(0, 0, 0, 0.714) url(./Images/Home-Page-Images/Home-background-image.webp);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+#logo{
+    width: 200px;
+}
+
+#section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(78, 78, 78, 0.247);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(0, 0, 0, 0.336);
+
+    width: fit-content;
+    height: fit-content;
+    padding: 3vw;
+}
+
+.main-title{
+    font-family: var(--Title-font);
+    font-size: 50px;
+}
+
+small{
+    padding-bottom: 2vw;
+    font-size: 15px;
+}
+
+Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding: 2vw;
+}
+
+#user-name, #password{
+    outline: none;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    color: rgb(104, 104, 104);
+    padding: 2px;
+    width: 20vw;
+}
+
+#sign_in{
+    width: 100px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+#user-name:hover, #password:hover{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+#user-name:focus, #password:focus{
+    background-color: transparent;
+    cursor: text;
+    color: white;
+    border-color: var(--accent-color);
+    padding: 2px;
+}
+
+#sign_in:hover{
+    border-color: var(--subback-color);
+    background-color: var(--subback-color);
+}
+
+/*====Login Options part======================================================*/
+
+.login-options{
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.google, .facebook{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--subback-color);
+    width: 25vw;
+    justify-content: center;
+    border: 2px solid var(--subback-color);
+    border-radius: 15px;
+}
+
+.login-options svg{
+    width: 25px;
+    fill: var(--text-color);
+}
+
+.google:hover , .facebook:hover{
+    background-color: transparent;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--accent-color);
+}
+
+
+/*===== Media Queries=========================================================*/
+
+@media (max-width:880px) {
+    
+    .main-title{
+        font-size: 30px;
+    }
+
+    #user-name, #password{
+        width: 250px;
+    }
+
+    .google,.facebook{
+        width: 250px;
+        font-size: 12px;
+    }
+}

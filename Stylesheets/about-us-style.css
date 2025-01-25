@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Audiowide&family=Black+Ops+One&family=Bree+Serif&family=Odibee+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&family=Zen+Dots&display=swap');
+
+:root{
+    --color1: Black;
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+
+    --Title-font: "Audiowide", serif;
+    --Title-shadow: 2px 2px var(--subback-color);
+}
+
+body{
+    background: rgba(0, 0, 0, 0.822) url(./Images/Background-images/MIX-game\ collarge.webp);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent, transparent );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+
+
+/*=====Branch Navigation======================================================*/
+
+.branch-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3vw;
+}
+
+.main-title{
+    font-size: 4vw;
+    font-family: var(--Title-font);
+    text-shadow: var(--Title-shadow);
+}
+
+.navi-tabs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.navi-tabs a{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(9px);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--accent-color);
+    width: 15vw;
+    min-width: 250px;
+    text-align: center;
+
+    font-family: var(--Title-font);
+    margin: 2px;
+}
+
+.navi-tabs a:hover{
+
+    border-color: var(--subback-color);
+    box-shadow: 2px 2px 10px var(--accent-color), -2px -2px 10px var(--accent-color);
+    scale: 1.05;
+    transition: .2s ease-out;
+    color: var(--accent-color);
+}
+
+/*=====Table Section==========================================================*/
+
+.table-section{
+    border-bottom: 2px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+table{
+    background-color: rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-color: var(--text-color);
+    width: 50vw;
+    height: 10vw;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+table caption{
+    font-family: var(--Title-font);
+    text-shadow: var(--Title-shadow);
+    font-size: 2vw;
+}
+
+th,td{
+    padding: 0 10px;
+}
+
+td a{
+    font-size: 14px;
+    color: var(--accent-color);
+}
+
+/*=====Description section ===================================================*/
+
+.branch-descriptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.branch-image{
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+.images a svg{
+    width: 20px;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.container div{
+    flex: 0 1 100%;
+    flex-shrink: 0;
+}
+
+.branch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.329);
+    backdrop-filter: blur(9px);
+}
+
+.branch-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branch-details h2{
+    font-family: var(--Title-font);
+    text-shadow: var(--Title-shadow);
+    text-decoration: underline;
+}
+
+.Branch-picture{
+    width: 300px;
+    height: 300px;
+}
+
+/*=====map Formatting=========================================================*/
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:300px;}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;}
+
+.gmap_iframe {
+    height: 300px !important;
+}
+
+/*=====Media Queries==========================================================*/
+
+@media (max-width:880px) {
+
+    /*===Main Title===*/
+
+    .main-title{
+        font-size: 35px;
+    }
+
+    /*===navi-tabs===*/
+
+    .navi-tabs{
+        gap: 10px;
+    }
+
+    .navi-tabs a{
+        padding: 0;
+        border-radius: 15px;
+    }
+
+    /*===table===*/
+    table{
+        font-size: 12px;
+    }
+
+    .tele{
+        display: none;
+    }
+
+    table caption{
+        font-size: 25px;
+    }
+
+    /*===description part===*/
+    .gmap_canvas{
+        height: 200px;
+    }
+
+    .gmap_iframe{
+        width: 200px;
+    }
+
+    .container{
+        width: 200px;
+        height: 200px;
+    }
+
+    .branch-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .branch{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .branch-details h4{
+        display: block;
+        text-align: center;
+        font-size: 14px;
+    }
+}
