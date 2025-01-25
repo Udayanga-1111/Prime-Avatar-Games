@@ -1,6 +1,7 @@
 {
   "name": "Prime Avatar Games",
   "short_name": "PA Games",
+  "start_url": "index.html",
   "icons": [
     {
       "src": "/\\Icons/web-app-manifest-192x192.png",
@@ -12,6 +13,24 @@
       "src": "/\\Icons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
+      "purpose": "maskable"
+    }
+    {
+      "src": "./\\Icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+      "purpose": "maskable"
+    },
+    {
+      "src": "./\\Icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+      "purpose": "maskable" 
+    },
+    {
+      "src": "./\\Icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
       "purpose": "maskable"
     }
   ],
