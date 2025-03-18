@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Stylesheets/Reset css.css">
     <link rel="stylesheet" href="./Stylesheets/style2.css">
     <link rel="stylesheet" href="./Stylesheets/peripherals-style.css">
+    <script src="./Scripts/Animations/Hamburger.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -77,21 +78,19 @@
 
             <!-- --------------------------------------- menu button and menu ---------------------------------------------------------------------------- -->
 
-            <input type="checkbox" id="sidebar-active">
-
-            <label for="sidebar-active" id="open-sidebar-button">
+            <button id="open-sidebar-button">
 
                 <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
 
-            </label>
+            </button>
 
             <section class="links-container">
 
-                <label for="sidebar-active" id="close-sidebar-button">
+                <button id="close-sidebar-button">
 
                     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
 
-                </label>
+                </button>
 
                 <a href="./Sign-in.html">
 
@@ -103,12 +102,12 @@
 
                     </section></a>
                 <hr>
-                <a href="./index.html">Home</a>
-                <a href="./About-us.html">About us</a>
+                <a id="selected" href="./index.html">Home</a>
+                <a href="./About us.html">About us</a>
                 <a href="./Games.html">Games</a>
                 <a href="./Upcoming-Games.html">Upcoming Games</a>
                 <a href="./Consoles.html">Consoles</a>
-                <a id="selected" href="./Peripherals.html">Peripherals</a>
+                <a href="./Peripherals.html">Peripherals</a>
                 <a href="./Faq.html">Faq</a>
                 <hr>
                 <a href="#">Cart</a>
@@ -117,6 +116,7 @@
 
 
         </section>
+
 
     </header>
 

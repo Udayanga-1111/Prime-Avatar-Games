@@ -465,7 +465,7 @@ header #loginsec .links-container{
     padding: 0 20px;
     position: fixed;
     height: 100vh;
-    top: 0;
+    top: 0   !important;
     right: 0;
     
 
@@ -496,14 +496,14 @@ a{
 
 svg{
     fill: var(--text-color);
-}
-
-#sidebar-active{
-    display: none;
+    width: 38px;
+    height: 38px;
 }
 
 #open-sidebar-button, #close-sidebar-button{
     display: none;
+    background-color: transparent;
+    border: none;
 }
 /*--------------------- media queries ---------------------------*/
 
@@ -511,16 +511,6 @@ svg{
 
     html{
         scroll-padding-top: 100px;
-    }
-
-    #sidebar-active:checked ~ .links-container{
-        animation: right .5s ease-out;
-        display: flex;
-
-    }
-
-    #sidebar-active:checked ~ #overlay{
-        display: block;
     }
 
 
@@ -763,5 +753,18 @@ header #loginsec .links-container a:hover{
 
     100%{
         right: 0;
+    }
+}
+
+.slideAnimation{
+    display: flex !important;
+    animation: slideIn 0.5s ease-out;
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0) !important;
     }
 }
