@@ -211,7 +211,7 @@ h3{
 }
 
 
-.catagory{
+.upcomingGamesSection{
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -230,15 +230,15 @@ h2{
     color: white;
 }
 
-#Action-catagory, #RPG-catagory{
+#gamesSection{
     display: flex;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
 
     border-bottom: 2px solid;
-    padding: 40px;
-
+    padding: 40px 0;
+    width:calc((15vw  + 30px)* 4);
 
 }
 
