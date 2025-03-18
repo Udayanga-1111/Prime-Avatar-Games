@@ -248,7 +248,7 @@ main{
 }
 
 .item-name{
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     font-family: var(--Title-font);
 }
 
@@ -294,7 +294,6 @@ main{
     transition: .2s ease-in-out;
 }
 
-
 #page-no{
     text-align: center;
     font-size:20px;
@@ -313,21 +312,23 @@ main{
 
     .card{
         width: 175px;
-        height: 225px;
+        height: 275px;
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
 
-    .addToCart{
-        width: 100px;
-        font-size: 15px;
-    }
-
     .card .item-pic{
         width: 175px;
-        height: 75%;
+        height: 65%;
         border-radius: 15px 15px 0 0;
+    }
+
+    .item-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .item-name{
@@ -341,15 +342,25 @@ main{
         text-align: center;
     }
 
+    .addToCart{
+        width: 100px;
+        font-size: 15px;
+    }
 
     .slot-name{
         grid-row: 1/2;
         font-size: 25px;
     }
 
+    main .store-nav {
+        display: flex;
+        flex-direction: column !important;
+    }
+
     .store-nav a{
-        width: 200px;
+        width: 30vw;
         padding: 7px;
+        font-size: 2vw;
     }
 
     .container{
@@ -360,7 +371,7 @@ main{
 @media (max-width:400px) {
     .card{
         width: 150px;
-        height: 215px;
+        height: 275px;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -368,7 +379,7 @@ main{
 
     .card .item-pic{
         width: 150px;
-        height: 75%;
+        height: 50%;
         border-radius: 15px 15px 0 0;
     }
 
