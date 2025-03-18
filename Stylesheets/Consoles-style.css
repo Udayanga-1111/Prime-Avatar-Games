@@ -278,6 +278,23 @@ main{
     color: var(--accent-color);
 }
 
+.addToCart{
+    background-color: transparent;
+    border: 2px solid var(--subback-color);
+    width: 10vw;
+    height: 35px;
+    color: var(--text-color);
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.addToCart:hover{
+    background-color: var(--subback-color);
+    transition: .2s ease-in-out;
+}
+
+
 #page-no{
     text-align: center;
     font-size:20px;
@@ -300,6 +317,11 @@ main{
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+
+    .addToCart{
+        width: 100px;
+        font-size: 15px;
     }
 
     .card .item-pic{
