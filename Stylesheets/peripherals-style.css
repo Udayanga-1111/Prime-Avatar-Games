@@ -46,7 +46,7 @@ main{
     overflow-x: hidden;
     position: relative;
     width: 98vw;
-    height: 25vw;
+    height: 38vw;
     scroll-behavior: smooth;
 }
 
@@ -57,7 +57,8 @@ main{
 .container div{
     background-repeat: no-repeat;
     background-size: cover;
-    flex:1 0 50%;
+    background-position: center;
+    flex:1 0 100%;
     animation: slider 33s infinite ease-out;
     animation-play-state: running;
 }
@@ -128,7 +129,8 @@ main{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 50px auto 50px;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .item-slot  #shop-more{
@@ -159,10 +161,11 @@ main{
 
 .card{
     width: 27vw;
-    height: 15vw;
+    height: 21vw;
     border: 2px solid;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     gap: 10px;
 
     background-color: rgba(0, 0, 0, 0.397);
@@ -179,6 +182,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 30px;
+    border-top: 2px solid white;
+
 }
 
 .price{
@@ -189,6 +195,7 @@ main{
     width: 45%;
     height: 100%;
     border-radius: 15px 0 0 15px;
+    align-self: center;
 }
 
 .card:hover{
@@ -218,22 +225,27 @@ main{
     }
 
     .card{
-        width: 175px;
-        height: 225px;
+        width: 90vw;
+        height: 150px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
     }
 
     .card .item-pic{
-        width: 175px;
-        height: 75%;
+        width: 100px;
+        height: 50%;
         border-radius: 15px 15px 0 0;
     }
 
     .item-name{
         font-size: 15px;
-        text-align: center;
+    }
+
+    .item-details{
+        align-items: start;
+        border-top: none;
+        margin: 0 0 0 30px;
     }
 
     .price{
@@ -256,25 +268,10 @@ main{
     .container{
         height: 35vw;
     }
-    #long-name , #longname2{
-        font-size: 9px;
-    }
 }
 
 @media (max-width:400px) {
-    .card{
-        width: 150px;
-        height: 215px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
 
-    .card .item-pic{
-        width: 150px;
-        height: 75%;
-        border-radius: 15px 15px 0 0;
-    }
 
     .store-nav a{
         font-size: 20px;
@@ -288,27 +285,22 @@ main{
 
 #game1{
     background-image: url(./Images/Console-Images/Discounts.webp);
-    background-position: bottom left;
 }
 
 #game2{
     background-image: url(./Images/Console-Images/Xbox-Slider.jpg);
-    background-position: center;
 }
 
 #game3{
     background-image: url(./Images/Console-Images/Price-Drop-Alert-Web-Banner-Compressed\ \(1\).webp);
-    background-position: top left;
 }
 
 #game4{
     background-image: url(./Images/Console-Images/Peri-Discount.jpg);
-    background-position: top;
 }
 
 #game5{
     background-image: url(./Images/Console-Images/PS5-Cyber-Monday-Deals.webp);
-    background-position: bottom;
 }
 
 
@@ -384,4 +376,20 @@ main{
     95%,100%{
         transform: translateX(0);
     }
+}
+
+
+@keyframes imgInAnimation{
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.inAnimations{
+    animation: imgInAnimation 1s ease-out;
 }

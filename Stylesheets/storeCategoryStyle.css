@@ -1,0 +1,55 @@
+:root{
+    --color1: Black;
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+
+    --Title-font: "Audiowide", serif;
+    --Title-shadow: 2px 2px var(--subback-color);
+}
+
+.categoryContainer{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.categoryCard{
+    width: 15vw;
+    height: 5vw;
+    text-wrap: wrap;
+    text-align: center;
+
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 86, 101, 0.443);
+    font-family: var(--Title-font);
+}
+
+.categoryCard:hover{
+    scale: 1.02;
+    background-color: var(--subback-color);
+    transition: all .3s ease-out;
+}
+
+/*=====Media Queries========================================================================*/
+
+@media (max-width:880px) {
+    .categoryContainer{
+        gap: 10px;
+    }
+
+    .categoryCard{
+        width: fit-content;
+        padding: 0 10px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
