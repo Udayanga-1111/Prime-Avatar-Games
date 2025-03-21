@@ -31,6 +31,7 @@
 
     background-color: rgba(0, 86, 101, 0.443);
     font-family: var(--Title-font);
+    color: var(--text-color);
 }
 
 .categoryCard:hover{
