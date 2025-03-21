@@ -160,7 +160,7 @@ main{
 
 
 .card{
-    width: 27vw;
+    width: 25vw;
     height: 21vw;
     border: 2px solid;
     border-radius: 15px;
@@ -205,6 +205,21 @@ main{
 
 .item-name:hover{
     color: var(--accent-color);
+}
+
+.addToCart{
+    width: 30px;
+    height: 30px;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid var(--subback-color);
+    border-radius: 10px;
+}
+
+.addToCart:hover{
+    background-color: var(--subback-color);
+    scale: 1.1;
+    transition: all .2s ease-out;
 }
 
 #page-no{

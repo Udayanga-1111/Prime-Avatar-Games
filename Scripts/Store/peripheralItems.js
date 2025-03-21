@@ -18,6 +18,7 @@ class item {
     cardCreator = function () {
         let aDiv = document.createElement("a");
         aDiv.classList.add("card");
+        aDiv.classList.add(this.itemClass)
         aDiv.setAttribute("href", "#store");
         aDiv.innerHTML =
             `<img src="${this.imgSrc}" alt="Item Picture" class="item-pic">
