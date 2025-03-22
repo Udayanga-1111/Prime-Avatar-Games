@@ -1,0 +1,25 @@
+:root{
+    --color1: Black;
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+
+    --Title-font: "Audiowide", serif;
+    --Title-shadow: 2px 2px var(--subback-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartTable{
+    border: 2px solid var(--subback-color);
+}
+
+th, td{
+    border: 1px solid var(--subback-color);
+    padding: 0 20px;
+}
