@@ -16,9 +16,16 @@ main{
 }
 
 #cartTableBody{
-    border: 2px solid var(--subback-color);
-    border-radius: 10px;
     padding: 20px;
+    width: 90vw;
+}
+
+#cartTableBody  tr:nth-child(even){
+    background-color: rgba(4, 108, 164, 0.223);
+}
+
+#cartTableBody  tr:nth-child(odd){
+    background-color: rgba(66, 155, 203, 0.223);
 }
 
 th{
@@ -30,8 +37,16 @@ th{
 }
 
 td{
-    border-right: 2px solid var(--subback-color);
     padding: 5px 20px;
-    width: fit-content;
     min-width: 200px;
+    border: none;
+}
+
+#td1{
+    display: flex;
+    flex-direction: column;
+}
+
+.removeItem{
+    width: 150px;
 }

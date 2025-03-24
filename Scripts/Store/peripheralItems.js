@@ -41,7 +41,14 @@ document.addEventListener("click", (event) => {
 
         if (selectedItem) {
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
-            cart.push(selectedItem);
+                        // Check if item already exists
+            let existingItem = cart.find(item => item.itemNo === itemId);
+            if (existingItem) {
+                existingItem.quantity += 1; // Increment quantity
+            } else {
+                selectedItem.quantity = 1; // Set initial quantity
+                cart.push(selectedItem);
+            }
             localStorage.setItem("cart", JSON.stringify(cart));
             alert(`${selectedItem.itemName} has been added to your cart.`);
         }
