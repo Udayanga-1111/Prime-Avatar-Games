@@ -15,7 +15,7 @@ main{
     align-items: center;
 }
 
-#cartTable{
+#cartTableBody{
     border: 2px solid var(--subback-color);
     border-radius: 10px;
     padding: 20px;

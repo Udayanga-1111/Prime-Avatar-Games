@@ -33,3 +33,17 @@ const initApp = () => {
 };
 
 initApp();
+
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("addToCart")) {
+        const itemId = event.target.id;
+        const selectedItem = abc.find(item => item.itemNo === itemId);
+
+        if (selectedItem) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push(selectedItem);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(`${selectedItem.itemName} has been added to your cart.`);
+        }
+    }
+});
