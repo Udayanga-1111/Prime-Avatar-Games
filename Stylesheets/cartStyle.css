@@ -13,6 +13,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--text-color);
 }
 
 #cartTableBody{
@@ -20,33 +21,118 @@ main{
     width: 90vw;
 }
 
-#cartTableBody  tr:nth-child(even){
-    background-color: rgba(4, 108, 164, 0.223);
+caption{
+    font-family: var(--Title-font);
+    font-size: 2vw;
+    color: var(--accent-color);
 }
 
-#cartTableBody  tr:nth-child(odd){
+#cartTableBody  tr:nth-child(even) td{
+    background-color: rgb(55, 55, 55);
+}
+
+#cartTableBody  tr:nth-child(odd) td{
     background-color: rgba(66, 155, 203, 0.223);
 }
 
 th{
     border: 2px solid var(--subback-color);
     border-radius: 10px;
-    padding: 0 20px;
+    padding: 15px;
     width: fit-content;
-    min-width: 200px;
+    min-width: 100px;
 }
 
 td{
     padding: 5px 20px;
-    min-width: 200px;
+    min-width: 100px;
+    margin: 0;
     border: none;
+    margin: 0;
 }
 
 #td1{
+    display: flex;
+    align-items: center;
+}
+
+.cartItemPic{
+    width: 50px;
+    height: 50px;
+}
+
+.cartItemDetails{
     display: flex;
     flex-direction: column;
 }
 
 .removeItem{
-    width: 150px;
+    width: fit-content;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    font-weight: 400px;
+    color: var(--accent-color);
+}
+
+.totalSection{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 30vw;
+    border: 2px solid var(--subback-color);
+    border-radius: 20px;
+}
+
+.Total{
+    font-family: var(--Title-font);
+    font-size: 2vw;
+    color: var(--accent-color);
+}
+
+.TotalPrice{
+    font-family: var(--Title-font);
+    font-size: 1.5vw;
+}
+
+.paybtn{
+    border: 2px solid var(--subback-color);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.paybtn:hover{
+    scale: 1.1;
+    background-color: var(--subback-color);
+    transition: all .3s ease-out;
+}
+
+.itemAdder{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--subback-color);
+    color: var(--text-color);
+}
+
+.itemAdder:hover{
+    background-color: var(--subback-color);
+    transition: .3s ease-out;
+}
+
+#qtd{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartStatus{
+    font-family: var(--Title-font);
+    font-size: 2vw;
+    color: var(--accent-color);
 }
