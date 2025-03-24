@@ -34,7 +34,7 @@
     {
         "itemNo":"item5",
         "itemClass":"simulator",
-        "imgSrc":"/Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
+        "imgSrc":"./Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
         "itemName":"G29 Driving Force Racing Wheel",
         "itemPrice":"1012.97",
         "itemStatus":"Available"
@@ -42,7 +42,7 @@
     {
         "itemNo":"item6",
         "itemClass":"keyboard",
-        "imgSrc":"/Stylesheets/Images/Peripherals-Images/gmmk-black-compact.webp",
+        "imgSrc":"./Stylesheets/Images/Peripherals-Images/gmmk-black-compact.webp",
         "itemName":"Glorious GMMK",
         "itemPrice":"160.30",
         "itemStatus":"Available"
