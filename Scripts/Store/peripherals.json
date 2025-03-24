@@ -18,7 +18,7 @@
     {
         "itemNo":"item3",
         "itemClass":"router",
-        "imgSrc":"/Stylesheets/Images/Peripherals-Images/RT-AX82U-V2.webp",
+        "imgSrc":"./Stylesheets/Images/Peripherals-Images/RT-AX82U-V2.webp",
         "itemName":"RT-AX82U",
         "itemPrice":"281.38",
         "itemStatus":"Available"
