@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const totalPrice = document.querySelector(".TotalPrice");
         totalPrice.innerText = `$ ${Total.toFixed(2)}`;
-        let cartCount = cart.length;
         cartTable.appendChild(row);
     });
 
@@ -88,5 +87,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-
-export default cartCount;
