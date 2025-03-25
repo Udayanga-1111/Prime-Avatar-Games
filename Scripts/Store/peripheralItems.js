@@ -26,7 +26,6 @@ const initApp = () => {
         .then(response => response.json())
         .then(data => {
             abc.push(...data);
-            console.log(abc);
             
             addToHtml();
         })
