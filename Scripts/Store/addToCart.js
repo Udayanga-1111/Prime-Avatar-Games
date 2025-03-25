@@ -10,45 +10,83 @@ document.addEventListener("DOMContentLoaded", () => {
         cartStatus.innerText = `Your cart is empty....!`;
         return;
     }
-    let Total;
-    cart.forEach((item, Total) => {
+    let Total = 0;
+    cart.forEach((item) => {
         let row = document.createElement("tr");
-        let subTotal = item.itemPrice * item.quantity
-        Total+=subTotal
+        let subTotal = item.itemPrice * item.quantity;
+        Total += subTotal;
         row.innerHTML = `
             <td id="td1">
                 <img class="cartItemPic" src="${item.imgSrc}" alt="Item Image">
                 <div class="cartItemDetails">
                     ${item.itemName}
-                    <button class="removeItem" data-id="${item.itemNo}">Remove</button>
+                    <button class="removeItem" data-id="${item.itemNo
+            }">Remove</button>
                 </div>
             </td>
             <td >
                 <div id="qtd">
-                        <button class="itemAdder minusQ"><</button>
+                    <button class="itemAdder minusQ" data-id="${item.itemNo
+            }"><</button>
                     ${item.quantity}
-                    <button class="itemAdder plusQ">></button>
+                    <button class="itemAdder plusQ" data-id="${item.itemNo
+            }">></button>
                 </div>
             </td>
-            <td>$ ${item.itemPrice}</td>
-            <td>$ ${subTotal}</td>
+            <td class="currencyTD">$ ${item.itemPrice}</td>
+            <td class="currencyTD">$ ${subTotal.toFixed(2)}</td>
             
         `;
 
         const totalPrice = document.querySelector(".TotalPrice");
-        totalPrice.innerText = `$ ${Total}`
+        totalPrice.innerText = `$ ${Total.toFixed(2)}`;
+        let cartCount = cart.length;
         cartTable.appendChild(row);
     });
 
     // Handle remove item functionality
-    document.querySelectorAll(".removeItem").forEach(button => {
+    document.querySelectorAll(".removeItem").forEach((button) => {
         button.addEventListener("click", (event) => {
             let itemId = event.target.dataset.id;
-            cart = cart.filter(item => item.itemNo !== itemId);
+            cart = cart.filter((item) => item.itemNo !== itemId);
             localStorage.setItem("cart", JSON.stringify(cart));
             location.reload(); // Reload page to update table
         });
     });
 
-    
+    //quantity increment button
+    document.querySelectorAll(".plusQ").forEach((button) => {
+        button.addEventListener("click", (event) => {
+            let itemId = event.target.dataset.id;
+            console.log(itemId);
+            cart.forEach((item) => {
+                if (itemId == item.itemNo) {
+                    item.quantity++;
+                }
+            });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            location.reload(); // Reload page to update table
+        });
+    });
+
+    //quantity decrement button
+
+    document.querySelectorAll(".minusQ").forEach((button) => {
+        button.addEventListener("click", (event) => {
+            let itemId = event.target.dataset.id;
+            console.log(itemId);
+            cart.forEach((item) => {
+                if (itemId == item.itemNo) {
+                    if (item.quantity > 1) {
+                        item.quantity--;
+                    }
+                }
+            });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            location.reload(); // Reload page to update table
+        });
+    });
+
 });
+
+export default cartCount;

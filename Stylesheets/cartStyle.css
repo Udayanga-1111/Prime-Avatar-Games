@@ -136,3 +136,7 @@ td{
     font-size: 2vw;
     color: var(--accent-color);
 }
+
+.currencyTD{
+    text-align: right;
+}

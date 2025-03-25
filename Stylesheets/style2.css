@@ -109,6 +109,22 @@ header{
     width: 32px;
 }
 
+#cartli a{
+    display: flex;
+    flex-direction: row;
+}
+
+#cartli a span{
+    position: absolute;
+    background-color: var(--subback-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    transform: translateY(20px);
+    right: 57px;
+    font-size: 15px;
+}
 
 #hr3{
     padding-right: 10px;
