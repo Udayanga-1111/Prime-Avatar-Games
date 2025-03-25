@@ -8,37 +8,152 @@
     --Title-shadow: 2px 2px var(--subback-color);
 }
 
+body{
+    background-color: black;
+    grid-template-columns: 70vw 25vw;
+    grid-template-rows: 200px calc(100vh - 200px);
+    overflow: hidden;
 
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    text-wrap: nowrap;
+}
 
-main{
-    width: 100vw;
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+/*===== Cart Header ===================================================*/
+
+header{
+    width: 70vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    color: var(--text-color);
-    padding: 0 10vw;
 }
 
-#cartTableBody{
-    padding: 20px;
-    background-color:rgb(18, 18, 18);
+.logoSection{
+    display: flex;
+    align-items: center;
 }
 
-caption{
+#logo{
+    width: 280px;
+    height: 80px;
+    padding-right: 10px;
+}
+
+#cartTitle{
+    color: var(--accent-color);
+    font-size: 40px;
+}
+
+.cartStatus{
     font-family: var(--Title-font);
     font-size: 2vw;
     color: var(--accent-color);
 }
 
-td{
-    padding: 5px 30px;
-    width: auto;
-    border-bottom: 2px solid rgb(71, 70, 70);
+/*--- Cart Navigation ---*/
+.homenavi{
+    font-size: 20px;
+    border: 2px solid var(--subback-color);
+    background-color: transparent;
+    padding: 2px 5px;
+    border-radius: 10px;
 }
 
-#td1{
+.homenavi:hover{
+    background-color: var(--subback-color);
+    transition: all .3s ease-out;
+}
+
+.backBtn{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--subback-color);
+    color: var(--text-color);
+}
+
+.backBtn:hover{
+    background-color: var(--subback-color);
+    transition: .3s ease-out;
+}
+
+/*===== Cart Main ======================================================*/
+main{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    padding: 40px;
+}
+
+/*--- Table ---*/
+#cartTableBody{
+    border-spacing: 0 10px;
+    height: fit-content;
+    padding: 10px;
+}
+
+.tableContainer{
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableContainer::-webkit-scrollbar{
+    display: none;
+}
+
+
+#main-td:hover{
+    scale: 1.01;
+    background-color:rgb(7, 45, 62);
+    transition: all .2s ease-out;
+}
+
+#main-td{
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.main-section{
     display: flex;
     align-items: center;
+    padding: 10px;
+}
+
+/*--- TD Sections ---*/
+
+.itemsec{
+    width: 500px;
+}
+
+#qsec{
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.currencySec p{
+    text-align: right;
+    font-size: 25px;
+    width: 150px;
 }
 
 .cartItemPic{
@@ -60,7 +175,19 @@ td{
     color: var(--accent-color);
 }
 
+.removeItem:hover{
+    cursor: pointer;
+}
+
 .totalSection{
+
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+    background-color: rgb(14, 14, 14);
+    position: absolute;
+    top:0;
+    right: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -69,8 +196,8 @@ td{
     gap: 10px;
 
     width: 30vw;
-    border: 2px solid var(--subback-color);
-    border-radius: 20px;
+    height: 100vh;
+    border-radius: 20px 0 0 20px;
 }
 
 .Total{
@@ -109,21 +236,4 @@ td{
 .itemAdder:hover{
     background-color: var(--subback-color);
     transition: .3s ease-out;
-}
-
-#qtd{
-    display: flex;
-    justify-content: space-around;
-    width: 100px;
-}
-
-.cartStatus{
-    font-family: var(--Title-font);
-    font-size: 2vw;
-    color: var(--accent-color);
-}
-
-.currencyTD{
-    text-align: right;
-    font-size: 25px;
 }

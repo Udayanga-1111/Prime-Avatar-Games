@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (cart.length === 0) {
         cartTable.style.display = "none";
-        totalSection.style.display = "none";
         const cartStatus = document.querySelector(".cartStatus");
         cartStatus.innerText = `Your cart is empty....!`;
         return;
@@ -17,26 +16,29 @@ document.addEventListener("DOMContentLoaded", () => {
         row.classList.add("tableRow");
         Total += subTotal;
         row.innerHTML = `
-            <td id="td1">
-                <img class="cartItemPic" src="${item.imgSrc}" alt="Item Image">
-                <div class="cartItemDetails">
-                    <p>${item.itemName}</P
-                    <p>${item.itemPrice}</p>
-                    <button class="removeItem" data-id="${item.itemNo
-            }">Remove</button>
-                </div>
-            </td>
-            <td >
-                <div id="qtd">
-                    <button class="itemAdder minusQ" data-id="${item.itemNo
-            }"><</button>
+            <td id="main-td">
+                <section class="main-section itemsec">
+                    
+                    <img class="cartItemPic" src="${item.imgSrc}" alt="Item Image">
+                    
+                    <div class="cartItemDetails">
+                        <p>${item.itemName}</P
+                        <p>${item.itemPrice}</p>
+                        <button class="removeItem" data-id="${item.itemNo}">Remove</button>
+                    </div>
+
+                </section>
+
+                <section id="qsec" class="main-section">
+                    <button class="itemAdder minusQ" data-id="${item.itemNo}">-</button>
                     ${item.quantity}
-                    <button class="itemAdder plusQ" data-id="${item.itemNo
-            }">></button>
-                </div>
+                    <button class="itemAdder plusQ" data-id="${item.itemNo}">+</button>
+                </section>
+
+                <section class ="main-section currencySec">
+                    <p>$ ${subTotal.toFixed(2)}</p>
+                </section>
             </td>
-            <td class="currencyTD">$ ${subTotal.toFixed(2)}</td>
-            
         `;
 
         const totalPrice = document.querySelector(".TotalPrice");
@@ -87,4 +89,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+});
+
+const backBtn = document.querySelector(".backBtn");
+
+backBtn.addEventListener("click", () => {
+    history.back();
 });
