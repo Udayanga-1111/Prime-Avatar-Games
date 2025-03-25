@@ -66,6 +66,7 @@ header{
     width: 100vw;
 }
 
+/*---Logo---*/
 #logo{
     position: relative;
     width: 280px;
@@ -79,6 +80,7 @@ header{
     list-style: none;
 }
 
+/*---Logo Section---*/
 #logonav{
     display: flex;
     justify-content: start;
@@ -97,6 +99,7 @@ header{
     grid-column: 4/5;
 }
 
+/*---Menu Button---*/
 #menu_b{
     padding:2px;
     background-color: transparent;
@@ -104,11 +107,12 @@ header{
     display: none;
 }
 
-
+/*---Cart button And Profile button---*/
 #cart, #profile{
     width: 32px;
 }
 
+/*---cart section list item---*/
 #cartli a{
     display: flex;
     flex-direction: row;
