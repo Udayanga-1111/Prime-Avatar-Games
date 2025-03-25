@@ -8,17 +8,20 @@
     --Title-shadow: 2px 2px var(--subback-color);
 }
 
+
+
 main{
+    width: 100vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
+    padding: 0 10vw;
 }
 
 #cartTableBody{
     padding: 20px;
-    width: 90vw;
+    background-color:rgb(18, 18, 18);
 }
 
 caption{
@@ -27,28 +30,10 @@ caption{
     color: var(--accent-color);
 }
 
-#cartTableBody  tr:nth-child(even) td{
-    background-color: rgb(55, 55, 55);
-}
-
-#cartTableBody  tr:nth-child(odd) td{
-    background-color: rgba(66, 155, 203, 0.223);
-}
-
-th{
-    border: 2px solid var(--subback-color);
-    border-radius: 10px;
-    padding: 15px;
-    width: fit-content;
-    min-width: 100px;
-}
-
 td{
-    padding: 5px 20px;
-    min-width: 100px;
-    margin: 0;
-    border: none;
-    margin: 0;
+    padding: 5px 30px;
+    width: auto;
+    border-bottom: 2px solid rgb(71, 70, 70);
 }
 
 #td1{
@@ -57,8 +42,8 @@ td{
 }
 
 .cartItemPic{
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
 }
 
 .cartItemDetails{
@@ -90,7 +75,7 @@ td{
 
 .Total{
     font-family: var(--Title-font);
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: var(--accent-color);
 }
 
@@ -129,6 +114,7 @@ td{
 #qtd{
     display: flex;
     justify-content: space-around;
+    width: 100px;
 }
 
 .cartStatus{
@@ -139,4 +125,5 @@ td{
 
 .currencyTD{
     text-align: right;
+    font-size: 25px;
 }

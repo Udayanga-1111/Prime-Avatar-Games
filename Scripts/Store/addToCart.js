@@ -14,12 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
     cart.forEach((item) => {
         let row = document.createElement("tr");
         let subTotal = item.itemPrice * item.quantity;
+        row.classList.add("tableRow");
         Total += subTotal;
         row.innerHTML = `
             <td id="td1">
                 <img class="cartItemPic" src="${item.imgSrc}" alt="Item Image">
                 <div class="cartItemDetails">
-                    ${item.itemName}
+                    <p>${item.itemName}</P
+                    <p>${item.itemPrice}</p>
                     <button class="removeItem" data-id="${item.itemNo
             }">Remove</button>
                 </div>
@@ -33,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }">></button>
                 </div>
             </td>
-            <td class="currencyTD">$ ${item.itemPrice}</td>
             <td class="currencyTD">$ ${subTotal.toFixed(2)}</td>
             
         `;
