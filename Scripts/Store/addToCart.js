@@ -50,13 +50,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const discountSec = document.getElementById("discountSec");
         const taxSec = document.getElementById("taxSec");
         const totalPrice = document.getElementById("TotalPrice");
+        const finalPrice = document.querySelector('.finalPrice');
 
         itemCount.innerText = cart.length;
         subTotalSec.innerText = `$ ${rawTotal.toFixed(2)}`;
         discountSec.innerText = `$ ${totalDiscount.toFixed(2)}`
-        totalPrice.innerText = `$ ${(rawTotal - totalDiscount).toFixed(2)}`;
         let totalWithoutTax = (rawTotal - totalDiscount).toFixed(2);
-        taxSec.innerText = `$ ${(totalWithoutTax*2/100).toFixed(2)}`
+        let taxAmount = (totalWithoutTax * .2 / 100).toFixed(2);
+        taxSec.innerText = `$ ${taxAmount}`;
+        let totalAmount = (rawTotal - totalDiscount + Number(taxAmount)).toFixed(2);
+        totalPrice.innerText = `$ ${totalAmount}`;
+        finalPrice.innerText = `$ ${totalAmount}`;
         cartTable.appendChild(row);
     });
 
