@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let subTotal = item.itemPrice * item.quantity;
         row.classList.add("tableRow");
         rawTotal += subTotal;
-        totalDiscount += item.itemDiscount || 0;
+        totalDiscount += Number(item.itemDiscount) * item.quantity;
         console.log(totalDiscount);
         row.innerHTML = `
             <td id="main-td">
@@ -48,12 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const itemCount = document.getElementById("itemCount");
         const subTotalSec = document.getElementById("subTotalSec");
         const discountSec = document.getElementById("discountSec");
-        const totalPrice = document.querySelector(".TotalPrice");
+        const taxSec = document.getElementById("taxSec");
+        const totalPrice = document.getElementById("TotalPrice");
 
         itemCount.innerText = cart.length;
         subTotalSec.innerText = `$ ${rawTotal.toFixed(2)}`;
         discountSec.innerText = `$ ${totalDiscount.toFixed(2)}`
-        totalPrice.innerText = `$ ${(rawTotal-totalDiscount).toFixed(2)}`;
+        totalPrice.innerText = `$ ${(rawTotal - totalDiscount).toFixed(2)}`;
+        let totalWithoutTax = (rawTotal - totalDiscount).toFixed(2);
+        taxSec.innerText = `$ ${(totalWithoutTax*2/100).toFixed(2)}`
         cartTable.appendChild(row);
     });
 

@@ -14,7 +14,7 @@
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/34-Curved-Monitor.webp",
         "itemName":"34 Curved Gaming Monitor",
         "itemPrice":627.56,
-        "itemDiscount":"20.50",
+        "itemDiscount":"10.50",
         "itemStatus":"Available"
     },
     {
@@ -23,7 +23,7 @@
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/RT-AX82U-V2.webp",
         "itemName":"RT-AX82U",
         "itemPrice":281.38,
-        "itemDiscount":"0",
+        "itemDiscount":"14",
         "itemStatus":"Available"
     },
     {
@@ -32,7 +32,7 @@
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/Gaming-Chair(GT-fordable).webp",
         "itemName":"GT Fordable Simulator Cockpit",
         "itemPrice":494.55,
-        "itemDiscount":"0",
+        "itemDiscount":"5",
         "itemStatus":"Available"
     },
     {
@@ -41,7 +41,7 @@
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
         "itemName":"G29 Driving Force Racing Wheel",
         "itemPrice":1012.97,
-        "itemDiscount":"0",
+        "itemDiscount":"34",
         "itemStatus":"Available"
     },
     {

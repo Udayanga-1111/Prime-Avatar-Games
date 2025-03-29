@@ -206,20 +206,19 @@ main{
     color: var(--accent-color);
 }
 
-.TotalPrice{
-    font-family: var(--Title-font);
-    font-size: 1.5vw;
-}
-
-.paybtn{
+.checkoutbtn{
+    width: 26vw;
+    height: 65px;
     border: 2px solid var(--subback-color);
-    padding: 5px 20px;
+    padding: 10px;
     border-radius: 10px;
     font-weight: 700;
+
+    font-size: 24px;
+    text-align: center;
 }
 
-.paybtn:hover{
-    scale: 1.1;
+.checkoutbtn:hover{
     background-color: var(--subback-color);
     transition: all .3s ease-out;
 }
@@ -236,4 +235,23 @@ main{
 .itemAdder:hover{
     background-color: var(--subback-color);
     transition: .3s ease-out;
+}
+
+/*===== Order Details Table==================================================================*/
+
+.orderTable{
+    width: 25vw;
+}
+
+#itemCount, #subTotalSec, #discountSec, #taxSec, #TotalPrice{
+    padding-right: 10px;
+    text-align: right;
+}
+
+.orderTable tr td{
+    padding-bottom: 5px;
+}
+
+#taxSec{
+    border-bottom: 1px solid;
 }
