@@ -4,7 +4,8 @@
         "itemClass":"mouse",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/Glorious-Model_D.webp",
         "itemName":"Glorious Model D",
-        "itemPrice":"61.39",
+        "itemPrice":61.39,
+        "itemDiscount":"20.50",
         "itemStatus":"Available"
     },
     {
@@ -12,7 +13,8 @@
         "itemClass":"monitor",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/34-Curved-Monitor.webp",
         "itemName":"34 Curved Gaming Monitor",
-        "itemPrice":"627.56",
+        "itemPrice":627.56,
+        "itemDiscount":"20.50",
         "itemStatus":"Available"
     },
     {
@@ -20,7 +22,8 @@
         "itemClass":"router",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/RT-AX82U-V2.webp",
         "itemName":"RT-AX82U",
-        "itemPrice":"281.38",
+        "itemPrice":281.38,
+        "itemDiscount":"0",
         "itemStatus":"Available"
     },
     {
@@ -28,7 +31,8 @@
         "itemClass":"simulator",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/Gaming-Chair(GT-fordable).webp",
         "itemName":"GT Fordable Simulator Cockpit",
-        "itemPrice":"494.55",
+        "itemPrice":494.55,
+        "itemDiscount":"0",
         "itemStatus":"Available"
     },
     {
@@ -36,7 +40,8 @@
         "itemClass":"simulator",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
         "itemName":"G29 Driving Force Racing Wheel",
-        "itemPrice":"1012.97",
+        "itemPrice":1012.97,
+        "itemDiscount":"0",
         "itemStatus":"Available"
     },
     {
@@ -44,7 +49,8 @@
         "itemClass":"keyboard",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/gmmk-black-compact.webp",
         "itemName":"Glorious GMMK",
-        "itemPrice":"160.30",
+        "itemPrice":160.30,
+        "itemDiscount":"0",
         "itemStatus":"Available"
     }
 ]
