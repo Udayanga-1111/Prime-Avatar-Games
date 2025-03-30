@@ -114,6 +114,24 @@ document.addEventListener("DOMContentLoaded", () => {
         location.reload(); // Reload page to update table
     });
 
+    const addToFavBtn = document.getElementById("addToFavBtn");
+    addToFavBtn.addEventListener("click", () => {
+        let favCart = JSON.parse(localStorage.getItem("favCart")) || [];
+        favCart.length = 0;
+        favCart = cart;
+        alert("Added to favorites...!")
+        
+        localStorage.setItem("favCart", JSON.stringify(favCart));
+        location.reload(); // Reload page to update table
+    });
+
+    const applyFavBtn = document.getElementById("applyFavBtn");
+    applyFavBtn.addEventListener("click", () => {
+        let favCart = JSON.parse(localStorage.getItem("favCart"));
+        cart = favCart;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        location.reload(); // Reload page to update table
+    });
 
 });
 
