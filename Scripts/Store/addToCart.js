@@ -23,20 +23,24 @@ document.addEventListener("DOMContentLoaded", () => {
             <td id="main-td">
                 <section class="main-section itemsec">
                     
-                    <img class="cartItemPic" src="${item.imgSrc}" alt="Item Image">
+                    <img class="cartItemPic" src="${item.imgSrc
+            }" alt="Item Image">
                     
                     <div class="cartItemDetails">
                         <p>${item.itemName}</P
                         <p>${item.itemPrice}</p>
-                        <button class="removeItem" data-id="${item.itemNo}">Remove</button>
+                        <button class="removeItem" data-id="${item.itemNo
+            }">Remove</button>
                     </div>
 
                 </section>
 
                 <section id="qsec" class="main-section">
-                    <button class="itemAdder minusQ" data-id="${item.itemNo}">-</button>
+                    <button class="itemAdder minusQ" data-id="${item.itemNo
+            }">-</button>
                     ${item.quantity}
-                    <button class="itemAdder plusQ" data-id="${item.itemNo}">+</button>
+                    <button class="itemAdder plusQ" data-id="${item.itemNo
+            }">+</button>
                 </section>
 
                 <section class ="main-section currencySec">
@@ -50,13 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const discountSec = document.getElementById("discountSec");
         const taxSec = document.getElementById("taxSec");
         const totalPrice = document.getElementById("TotalPrice");
-        const finalPrice = document.querySelector('.finalPrice');
+        const finalPrice = document.querySelector(".finalPrice");
 
         itemCount.innerText = cart.length;
         subTotalSec.innerText = `$ ${rawTotal.toFixed(2)}`;
-        discountSec.innerText = `$ ${totalDiscount.toFixed(2)}`
+        discountSec.innerText = `$ ${totalDiscount.toFixed(2)}`;
         let totalWithoutTax = (rawTotal - totalDiscount).toFixed(2);
-        let taxAmount = (totalWithoutTax * .2 / 100).toFixed(2);
+        let taxAmount = ((totalWithoutTax * 0.2) / 100).toFixed(2);
         taxSec.innerText = `$ ${taxAmount}`;
         let totalAmount = (rawTotal - totalDiscount + Number(taxAmount)).toFixed(2);
         totalPrice.innerText = `$ ${totalAmount}`;
@@ -119,20 +123,22 @@ document.addEventListener("DOMContentLoaded", () => {
         let favCart = JSON.parse(localStorage.getItem("favCart")) || [];
         favCart.length = 0;
         favCart = cart;
-        alert("Added to favorites...!")
-        
         localStorage.setItem("favCart", JSON.stringify(favCart));
+        alert("Added to favorites...!");
         location.reload(); // Reload page to update table
     });
 
     const applyFavBtn = document.getElementById("applyFavBtn");
     applyFavBtn.addEventListener("click", () => {
-        let favCart = JSON.parse(localStorage.getItem("favCart"));
-        cart = favCart;
+        let favCart = JSON.parse(localStorage.getItem("favCart")) || []; // Fallback to an empty array
+        let cart = favCart; // Ensure 'cart' is defined
         localStorage.setItem("cart", JSON.stringify(cart));
+        if (cart.length === 0) {
+            cart = favCart;
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
         location.reload(); // Reload page to update table
     });
-
 });
 
 const backBtn = document.querySelector(".backBtn");
