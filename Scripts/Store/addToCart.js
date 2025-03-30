@@ -107,6 +107,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    const clearCartButton = document.getElementById("clearCartBtn");
+    clearCartButton.addEventListener("click", () => {
+        cart.length = 0;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        location.reload(); // Reload page to update table
+    });
+
+
 });
 
 const backBtn = document.querySelector(".backBtn");
