@@ -1,15 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cartTable = document.getElementById("cartTableBody"); // Get the tbody of the table
-    const totalSection = document.querySelector(".totalSection");
+
+    // Get the references for interactive elements =================================================
+    const cartTable = document.getElementById("cartTableBody");
+    const cartStatus = document.querySelector(".cartStatus");
+    const clearCartButton = document.getElementById("clearCartBtn");
+    const addToFavBtn = document.getElementById("addToFavBtn");
+    const applyFavBtn = document.getElementById("applyFavBtn");
+    const itemCount = document.getElementById("itemCount");
+    const subTotalSec = document.getElementById("subTotalSec");
+    const discountSec = document.getElementById("discountSec");
+    const taxSec = document.getElementById("taxSec");
+    const totalPrice = document.getElementById("TotalPrice");
+    const finalPrice = document.querySelector(".finalPrice");
+
+    // get the cart from local storage =============================================================
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    if (cart.length === 0) {
-        cartTable.style.display = "none";
-        const cartStatus = document.querySelector(".cartStatus");
-        cartStatus.innerText = `Your cart is empty....!`;
-        return;
+    if (cart.length > 0) {
+        cartStatus.style.display="none";
     }
-    let Total = 0;
     let rawTotal = 0;
     let totalDiscount = 0;
     cart.forEach((item) => {
@@ -49,13 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </td>
         `;
 
-        const itemCount = document.getElementById("itemCount");
-        const subTotalSec = document.getElementById("subTotalSec");
-        const discountSec = document.getElementById("discountSec");
-        const taxSec = document.getElementById("taxSec");
-        const totalPrice = document.getElementById("TotalPrice");
-        const finalPrice = document.querySelector(".finalPrice");
-
+        // Order calculations ======================================================================
         itemCount.innerText = cart.length;
         subTotalSec.innerText = `$ ${rawTotal.toFixed(2)}`;
         discountSec.innerText = `$ ${totalDiscount.toFixed(2)}`;
@@ -68,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cartTable.appendChild(row);
     });
 
-    // Handle remove item functionality
+    // Handle remove item functionality ============================================================
     document.querySelectorAll(".removeItem").forEach((button) => {
         button.addEventListener("click", (event) => {
             let itemId = event.target.dataset.id;
@@ -78,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    //quantity increment button
+    //quantity increment button ====================================================================
     document.querySelectorAll(".plusQ").forEach((button) => {
         button.addEventListener("click", (event) => {
             let itemId = event.target.dataset.id;
@@ -93,8 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    //quantity decrement button
-
+    //quantity decrement button ====================================================================
     document.querySelectorAll(".minusQ").forEach((button) => {
         button.addEventListener("click", (event) => {
             let itemId = event.target.dataset.id;
@@ -111,32 +113,31 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    const clearCartButton = document.getElementById("clearCartBtn");
+    // Cart clear Function =========================================================================
     clearCartButton.addEventListener("click", () => {
         cart.length = 0;
         localStorage.setItem("cart", JSON.stringify(cart));
         location.reload(); // Reload page to update table
     });
 
-    const addToFavBtn = document.getElementById("addToFavBtn");
+    // Add to Favorite function ====================================================================
     addToFavBtn.addEventListener("click", () => {
-        let favCart = JSON.parse(localStorage.getItem("favCart")) || [];
-        favCart.length = 0;
-        favCart = cart;
-        localStorage.setItem("favCart", JSON.stringify(favCart));
-        alert("Added to favorites...!");
-        location.reload(); // Reload page to update table
+        if (cart.length > 0) {
+            let favCart = JSON.parse(localStorage.getItem("favCart")) || [];
+            favCart.length = 0;
+            favCart = cart;
+            localStorage.setItem("favCart", JSON.stringify(favCart));
+            alert("Added to favorites...!");
+            location.reload(); // Reload page to update table
+        } else {
+            alert("Shop First")
+        }
     });
 
-    const applyFavBtn = document.getElementById("applyFavBtn");
+    // Apply favorite function =====================================================================
     applyFavBtn.addEventListener("click", () => {
-        let favCart = JSON.parse(localStorage.getItem("favCart")) || []; // Fallback to an empty array
-        let cart = favCart; // Ensure 'cart' is defined
+        let cart = JSON.parse(localStorage.getItem("favCart")) || []; // Fallback to an empty array
         localStorage.setItem("cart", JSON.stringify(cart));
-        if (cart.length === 0) {
-            cart = favCart;
-            localStorage.setItem("cart", JSON.stringify(cart));
-        }
         location.reload(); // Reload page to update table
     });
 });
