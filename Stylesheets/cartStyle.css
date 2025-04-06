@@ -286,7 +286,7 @@ main{
     font-family: var(--Title-font);
 }
 
-/*===== Cart Action Buttons=================================================================*/
+/*===== Cart Action Buttons ================================================================*/
 
 .cartActionBtns{
     display: flex;
@@ -316,3 +316,5 @@ main{
     background-color: var(--subback-color);
     transition: .3s  ease-out;
 }
+
+/*===== Media Queries ============================================================================*/
