@@ -128,6 +128,7 @@ main{
 }
 
 #main-td{
+    width: 50vw;
     background-color: rgb(14, 14, 14);
     display: flex;
     border-radius: 20px;
@@ -188,6 +189,7 @@ main{
     background-color: transparent;
     border: 2px solid var(--subback-color);
     color: var(--text-color);
+    margin: 0 5px;
 }
 
 .itemAdder:hover{
@@ -317,4 +319,86 @@ main{
     transition: .3s  ease-out;
 }
 
+.totalDisplaySec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*===== Media Queries ============================================================================*/
+
+@media(max-width:1200px){
+
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows:100px 500px calc(100vh - 600px) ;
+        row-gap: 20px;
+    }
+
+    /*=== Header Section ===*/
+    header{
+        width: 100vw;
+    }
+
+    .backBtn,.homenavi{
+        width: 85px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #cartTitle{
+        display: none;
+    }
+
+    #logo{
+        width: 32vw;
+        height: 10vw;
+    }
+
+    /* === Total Section ===*/
+    .totalSection{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative;
+        width: 99vw;
+        border-radius: 10px;
+        height: 500px;
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .orderTable{
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    .checkoutbtn{
+        width: 90vw;
+        height: 50px;
+    }
+
+    
+    #clearCartBtn{
+        width: 80vw;
+        height: 50px;
+    }
+
+    #addToFavBtn, #applyFavBtn{
+        width: 100px;
+        height: 30px;
+    }
+
+    .totalDisplaySec{
+        display: none;
+    }
+
+    .TotalSecTitle{
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    main{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
