@@ -20,7 +20,6 @@ body{
 
 
 main{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent, transparent );
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto 1fr;
@@ -31,6 +30,7 @@ main{
 /*=====Slideshow part=========================================================*/
 
 .slideshow{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent, transparent );
     width: 100vw;
     padding: 30px 0;
     height: fit-content;
@@ -46,7 +46,7 @@ main{
     overflow-x: hidden;
     position: relative;
     width: 98vw;
-    height: 25vw;
+    height: 38vw;
     scroll-behavior: smooth;
 }
 
@@ -57,7 +57,8 @@ main{
 .container div{
     background-repeat: no-repeat;
     background-size: cover;
-    flex:1 0 50%;
+    background-position: center;
+    flex:1 0 100%;
     animation: slider 33s infinite ease-out;
     animation-play-state: running;
 }
@@ -104,7 +105,7 @@ main{
     clip-path: polygon(0 0, 0 100%, 90% 100%, 100% 0);
     transform: translateX(-46%);
     background-color: var(--subback-color);
-    border: 2px var(--subback-color) solid;
+    border: 2px var(--color1) solid;
 }
 
 #peri-nav{
@@ -114,7 +115,6 @@ main{
     background-color: rgba(0, 0, 0, 0.438);
     backdrop-filter: blur(9px);
     border: 2px var(--subback-color) solid;
-
 }
 
 /*=====Store items Part=======================================================*/
@@ -128,93 +128,9 @@ main{
 .item-slot{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 50px 50px auto 50px;
-    gap: 20px;
-}
-
-/*===Filter section===*/
-
-.filters{
-    border-bottom:2px solid ;
-}
-
-.button-content{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.filterlist li{
-    list-style: none;
-}
-
-.Filter-button{
-    background-color: transparent;
-    color: var(--text-color);
-    border: 2px solid;
-    padding: 3px 13px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.filter-list-2{
-    display: none !important;
-    width: 200px;
-    position: absolute;
-    background-color: rgb(39, 39, 39);
-    padding: 10px 10px 10px 20px;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.show{
-    display: flex !important;
-}
-
-.hide{
-    display: none;
-}
-
-.b-f{
-    background-color: transparent;
-    color: var(--text-color);
-    border: none;
-    cursor: pointer;
-}
-
-
-
-.b-f:active::after{
-    display: block;
-    width: 100%;
-}
-
-.b-f::after{
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: var(--text-color);
-}
-
-.b-f:hover::after{
-    width: 100%;
-    transition: .3s ease-out;
-}
-
-/*===Slot Section===*/
-
-.slot-name{
-    font-family: var(--Title-font);
-    text-align: center;
-    font-size: 35px;
-    text-shadow: var(--Title-shadow);
-}
-
-.filters{
-    grid-row: 2/3;
+    grid-template-rows: 50px auto 50px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .item-slot  #shop-more{
@@ -224,9 +140,17 @@ main{
     font-size: 20px;
 }
 
+
+.slot-name{
+    font-family: var(--Title-font);
+    text-align: center;
+    font-size: 35px;
+    text-shadow: var(--Title-shadow);
+}
+
 .item-list{
     display: flex;
-    grid-row: 3/4;
+    grid-row: 2/3;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
@@ -234,13 +158,13 @@ main{
 
 }
 
-
 .card{
-    width: 27vw;
-    height: 15vw;
+    width: 25vw;
+    height: 21vw;
     border: 2px solid;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     gap: 10px;
 
     background-color: rgba(0, 0, 0, 0.397);
@@ -248,7 +172,7 @@ main{
 }
 
 .item-name{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-family: var(--Title-font);
 }
 
@@ -257,16 +181,21 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 30px;
+    border-top: 2px solid white;
+
+}
+
+.price{
+    font-weight: 300;
+    font-size: 1vw;
 }
 
 .card .item-pic{
     width: 45%;
     height: 100%;
     border-radius: 15px 0 0 15px;
-}
-
-.price{
-    font-weight: 300;
+    align-self: center;
 }
 
 .card:hover{
@@ -279,24 +208,34 @@ main{
 }
 
 .addToCart{
+    width:10vw;
+    height:7vw;
+    color: var(--text-color);
     background-color: transparent;
     border: 2px solid var(--subback-color);
-    width: 10vw;
-    height: 35px;
-    color: var(--text-color);
-    font-size: 15px;
-    border-radius: 5px;
-    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
 .addToCart:hover{
     background-color: var(--subback-color);
-    transition: .2s ease-in-out;
+    scale: 1.1;
+    transition: all .2s ease-out;
 }
 
 #page-no{
     text-align: center;
-    font-size:20px;
+    font-size: 20px;
+}
+
+.none{
+    display: none;
+}
+
+.none2{
+    display: block;
 }
 
 /*=====Media Queries==========================================================*/
@@ -304,6 +243,7 @@ main{
 @media (max-width:880px) {
     
     .item-list{
+        grid-row: 2/3;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-evenly;
@@ -311,29 +251,28 @@ main{
     }
 
     .card{
-        width: 175px;
-        height: 275px;
+        width: 90vw;
+        height: 150px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
+        padding: 0 10px;
     }
 
     .card .item-pic{
-        width: 175px;
-        height: 65%;
+        width: 100px;
+        height: 50%;
         border-radius: 15px 15px 0 0;
-    }
-
-    .item-details{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .item-name{
         font-size: 15px;
-        text-align: center;
+    }
+
+    .item-details{
+        align-items: start;
+        border-top: none;
+        margin: 0 0 0 30px;
     }
 
     .price{
@@ -342,81 +281,69 @@ main{
         text-align: center;
     }
 
-    .addToCart{
-        width: 100px;
-        font-size: 15px;
-    }
 
     .slot-name{
         grid-row: 1/2;
         font-size: 25px;
     }
 
-    main .store-nav {
-        display: flex;
-        flex-direction: column !important;
-    }
-
     .store-nav a{
-        width: 30vw;
+        width: 200px;
         padding: 7px;
-        font-size: 2vw;
     }
 
     .container{
         height: 35vw;
     }
+
+    .addToCart{
+        margin-left: auto;
+        height: 30px;
+        width: 100px;
+    }
 }
 
 @media (max-width:400px) {
-    .card{
-        width: 150px;
-        height: 275px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .card .item-pic{
-        width: 150px;
-        height: 50%;
-        border-radius: 15px 15px 0 0;
-    }
 
     .store-nav a{
         font-size: 20px;
         width: 180px;
         padding: 7px;
     }
+
+    .none{
+        display: block;
+        align-self: flex-start;
+        margin: 0;
+    }
     
+    .none2{
+        display: none;
+    }
 }
 
 /*=====Slideshow Images=======================================================*/
 
 #game1{
     background-image: url(./Images/Console-Images/Discounts.webp);
-    background-position: bottom left;
 }
 
 #game2{
     background-image: url(./Images/Console-Images/Xbox-Slider.jpg);
-    background-position: center;
 }
 
 #game3{
     background-image: url(./Images/Console-Images/Price-Drop-Alert-Web-Banner-Compressed\ \(1\).webp);
-    background-position: top left;
 }
 
 #game4{
     background-image: url(./Images/Console-Images/Peri-Discount.jpg);
-    background-position: top;
 }
 
 #game5{
     background-image: url(./Images/Console-Images/PS5-Cyber-Monday-Deals.webp);
-    background-position: bottom;
 }
+
 
 /*=====Animations=============================================================*/
 
@@ -490,4 +417,20 @@ main{
     95%,100%{
         transform: translateX(0);
     }
+}
+
+
+@keyframes imgInAnimation{
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.inAnimations{
+    animation: imgInAnimation 1s ease-out;
 }

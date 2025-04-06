@@ -1,111 +1,55 @@
-// define the class for console items.
-
-class item {
-    constructor(
-        itemClass,
-        imgSrc,
-        itemName,
-        itemPrice,
-        ItemStatus,
-    ) {
-        this.itemClass = itemClass;
-        this.imgSrc = imgSrc;
-        this.itemName = itemName;
-        this.itemPrice = itemPrice;
-        this.ItemStatus = ItemStatus;
-    }
-
-    cardCreator = function () {
-        let aDiv = document.createElement("a");
-        aDiv.classList.add(this.itemClass);
-        aDiv.setAttribute("href", "#store");
+const abc = [];
+const addToHtml = function () {
+    abc.forEach(product => {
+        let aDiv = document.createElement("div");
+        aDiv.classList.add("card");
+        aDiv.classList.add(product.itemClass)
         aDiv.innerHTML =
-            `<div class="card">
-                <img src="${this.imgSrc}" alt="item picture" class="item-pic">
-                <section class="item-details">
-                    <h2 class="item-name">${this.itemName}</h2>
-                    <h4 class="price">$ ${this.itemPrice}</h4>
-                    <h4 class="extra">${this.ItemStatus}</h4>
-                    <button class="addToCart">Add To Cart</button>
-                </section>
-            </div>`;
+            `<img src="${product.imgSrc}" alt="Item Picture" class="item-pic">
+    
+            <section class="item-details">
+                <h2 class="item-name">${product.itemName}</h2>
+                <h4 class="price">$${product.itemPrice}</h4>
+                <button class="addToCart none" id="${product.itemNo}">Add To Cart</button>
+            </section>
+            
+            <button class="addToCart none2" id="${product.itemNo}">Add To Cart</button>`;
         
         let itemSection = document.querySelector(".item-list"); // Assuming 'item-list' is a class
         itemSection.append(aDiv);
-    };
-}
-
-// Item Objects.
-
-// 01
-
-const PSSlim = new item(
-    "PS",
-    "./Stylesheets/Images/Console-Images/PS-4-Slim.webp",
-    "Play Station 4 Slim",
-    "392.23",
-    "Available"
-);
-
-PSSlim.cardCreator();
-
-// 02
-
-const XboxSeries = new item(
-    "xbox",
-    "./Stylesheets/Images/Console-Images/X-box_Series_X.webp",
-    "X Box Series X",
-    "648",
-    "Available"
-)
-
-XboxSeries.cardCreator();
-
-// 03
-
-const RGConsloe = new item(
-    "plays",
-    "./Stylesheets/Images/Console-Images/RG353VS-black.webp",
-    "RG353VS",
-    "112.55",
-    "Available"
-)
-
-RGConsloe.cardCreator();
+    })
+};
 
 
-// 04
+const initApp = () => {
+    fetch('./Scripts/Store/peripherals.json') // Ensure the file is in the root directory of the server
+        .then(response => response.json())
+        .then(data => {
+            abc.push(...data.consoles); // Spread operator to push all items into the array
+            
+            addToHtml();
+        })
+};
 
-const LigionGo = new item(
-    "plays",
-    "./Stylesheets/Images/Console-Images/Legion_GO.webp",
-    "Ligion GO",
-    "1190.32",
-    "Available"
-)
+initApp();
 
-LigionGo.cardCreator();
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("addToCart")) {
+        const itemId = event.target.id;
+        const selectedItem = abc.find(item => item.itemNo === itemId);
 
-// 05
-
-const xboxS = new item(
-    "xbox",
-    "./Stylesheets/Images/Console-Images/X-Box-Series_S.webp",
-    "X Box Series S",
-    "409.28",
-    "Available"
-)
-
-xboxS.cardCreator();
-
-// 06
-
-const PS5Pro = new item(
-    "PS",
-    "./Stylesheets/Images/Console-Images/PS-5-Pro_Console-2TB.webp",
-    "PS 5 Pro Console",
-    "1012.97",
-    "Available"
-)
-
-PS5Pro.cardCreator();
+        if (selectedItem) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                        // Check if item already exists
+            let existingItem = cart.find(item => item.itemNo === itemId);
+            if (existingItem) {
+                existingItem.quantity += 1; // Increment quantity
+            } else {
+                selectedItem.quantity = 1; // Set initial quantity
+                cart.push(selectedItem);
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(`${selectedItem.itemName} has been added to your cart.`);
+        }
+    }
+});

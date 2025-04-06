@@ -1,58 +1,103 @@
 {
     "peripherals": [
-    {
-        "itemNo":"item1",
-        "itemClass":"mouse",
-        "imgSrc":"./Stylesheets/Images/Peripherals-Images/Glorious-Model_D.webp",
-        "itemName":"Glorious Model D",
-        "itemPrice":61.39,
-        "itemDiscount":"20.50",
-        "itemStatus":"Available"
-    },
-    {
-        "itemNo":"item2",
-        "itemClass":"monitor",
-        "imgSrc":"./Stylesheets/Images/Peripherals-Images/34-Curved-Monitor.webp",
-        "itemName":"34 Curved Gaming Monitor",
-        "itemPrice":627.56,
-        "itemDiscount":"10.50",
-        "itemStatus":"Available"
-    },
-    {
-        "itemNo":"item3",
-        "itemClass":"router",
-        "imgSrc":"./Stylesheets/Images/Peripherals-Images/RT-AX82U-V2.webp",
-        "itemName":"RT-AX82U",
-        "itemPrice":281.38,
-        "itemDiscount":"14",
-        "itemStatus":"Available"
-    },
-    {
-        "itemNo":"item4",
-        "itemClass":"simulator",
-        "imgSrc":"./Stylesheets/Images/Peripherals-Images/Gaming-Chair(GT-fordable).webp",
-        "itemName":"GT Simulator Cockpit",
-        "itemPrice":494.55,
-        "itemDiscount":"5",
-        "itemStatus":"Available"
-    },
-    {
-        "itemNo":"item5",
-        "itemClass":"simulator",
-        "imgSrc":"./Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
-        "itemName":"G29 Racing Wheel",
-        "itemPrice":1012.97,
-        "itemDiscount":"34",
-        "itemStatus":"Available"
-    },
-    {
-        "itemNo":"item6",
-        "itemClass":"keyboard",
-        "imgSrc":"./Stylesheets/Images/Peripherals-Images/gmmk-black-compact.webp",
-        "itemName":"Glorious GMMK",
-        "itemPrice":160.30,
-        "itemDiscount":"0",
-        "itemStatus":"Available"
-    }
-]
+        {
+            "itemNo":"p1",
+            "itemClass":"mouse",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/Glorious-Model_D.webp",
+            "itemName":"Glorious Model D",
+            "itemPrice":61.39,
+            "itemDiscount":"20.50"
+        },
+        {
+            "itemNo":"p2",
+            "itemClass":"monitor",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/34-Curved-Monitor.webp",
+            "itemName":"34 Curved Gaming Monitor",
+            "itemPrice":627.56,
+            "itemDiscount":"10.50"
+        },
+        {
+            "itemNo":"p3",
+            "itemClass":"router",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/RT-AX82U-V2.webp",
+            "itemName":"RT-AX82U",
+            "itemPrice":281.38,
+            "itemDiscount":"14"
+        },
+        {
+            "itemNo":"p4",
+            "itemClass":"simulator",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/Gaming-Chair(GT-fordable).webp",
+            "itemName":"GT Simulator Cockpit",
+            "itemPrice":494.55,
+            "itemDiscount":"5"
+        },
+        {
+            "itemNo":"p5",
+            "itemClass":"simulator",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
+            "itemName":"G29 Racing Wheel",
+            "itemPrice":1012.97,
+            "itemDiscount":"34"
+        },
+        {
+            "itemNo":"p6",
+            "itemClass":"keyboard",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/gmmk-black-compact.webp",
+            "itemName":"Glorious GMMK",
+            "itemPrice":160.30,
+            "itemDiscount":"0"
+        }
+    ],
+    "consoles":[
+        {
+            "itemNo":"c1",
+            "itemClass":"PS",
+            "imgSrc":"./Stylesheets/Images/Console-Images/PS-4-Slim.webp",
+            "itemName":"Play Station 4 Slim ",
+            "itemPrice":392.23,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"c2",
+            "itemClass":"xbox",
+            "imgSrc":"./Stylesheets/Images/Console-Images/X-box_Series_X.webp",
+            "itemName":"X Box Series X",
+            "itemPrice":648,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"c3",
+            "itemClass":"plays",
+            "imgSrc":"./Stylesheets/Images/Console-Images/RG353VS-black.webp",
+            "itemName":"RG353VS",
+            "itemPrice":112.55,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"c4",
+            "itemClass":"plays",
+            "imgSrc":"./Stylesheets/Images/Console-Images/Legion_GO.webp",
+            "itemName":"Ligion Go",
+            "itemPrice":1190.32,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"c5",
+            "itemClass":"xbox",
+            "imgSrc":"./Stylesheets/Images/Console-Images/X-Box-Series_S.webp",
+            "itemName":"X Box Series S",
+            "itemPrice":409.28,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"c6",
+            "itemClass":"PS",
+            "imgSrc":"./Stylesheets/Images/Console-Images/PS-5-Pro_Console-2TB.webp",
+            "itemName":"PS 5 proConsole",
+            "itemPrice":1012.97,
+            "itemDiscount":"0"
+        }
+    ]
+
 }
