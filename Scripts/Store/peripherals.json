@@ -1,4 +1,5 @@
-[
+{
+    "peripherals": [
     {
         "itemNo":"item1",
         "itemClass":"mouse",
@@ -30,7 +31,7 @@
         "itemNo":"item4",
         "itemClass":"simulator",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/Gaming-Chair(GT-fordable).webp",
-        "itemName":"GT Fordable Simulator Cockpit",
+        "itemName":"GT Simulator Cockpit",
         "itemPrice":494.55,
         "itemDiscount":"5",
         "itemStatus":"Available"
@@ -39,7 +40,7 @@
         "itemNo":"item5",
         "itemClass":"simulator",
         "imgSrc":"./Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
-        "itemName":"G29 Driving Force Racing Wheel",
+        "itemName":"G29 Racing Wheel",
         "itemPrice":1012.97,
         "itemDiscount":"34",
         "itemStatus":"Available"
@@ -54,3 +55,4 @@
         "itemStatus":"Available"
     }
 ]
+}
