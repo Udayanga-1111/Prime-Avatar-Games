@@ -45,8 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <section id="qsec" class="main-section">
                     <button class="itemAdder minusQ" data-id="${item.itemNo}">-</button>
                     ${item.quantity}
-                    <button class="itemAdder plusQ" data-id="${item.itemNo
-            }">+</button>
+                    <button class="itemAdder plusQ" data-id="${item.itemNo }">+</button>
                 </section>
 
                 <section class ="main-section currencySec">
