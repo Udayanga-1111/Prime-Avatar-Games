@@ -409,6 +409,8 @@ main{
         padding: 0;
         font-size: 24px;
     }
+
+    /* === Cart table === */
     
     main{
         grid-column: 1/2;
@@ -418,6 +420,7 @@ main{
         flex-direction: column;
         width: 100vw;
         position: relative;
+        padding: 10px;
     }
 
     main::after{
@@ -429,5 +432,33 @@ main{
         background-color: var(--subback-color);
         top: 0;
         clip-path: polygon(50% 0, 0 100%, 100% 100%, 50% 0);
+    }
+
+    #main-td{
+        width: 95vw;
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .currencySec p{
+        text-align: center;
+    }
+
+    .itemsec{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .cartItemDetails{
+        display: flex;
+        width: 80vw;
+        align-items: center;
+    }
+
+    .cartItemPic{
+        width: 80px;
+        height: 100px;
     }
 }

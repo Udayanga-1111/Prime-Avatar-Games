@@ -32,21 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
             <td id="main-td">
                 <section class="main-section itemsec">
                     
-                    <img class="cartItemPic" src="${item.imgSrc
-            }" alt="Item Image">
+                    <img class="cartItemPic" src="${item.imgSrc}" alt="Item Image">
                     
                     <div class="cartItemDetails">
-                        <p>${item.itemName}</P
+                        <p>${item.itemName}</p>
                         <p>${item.itemPrice}</p>
-                        <button class="removeItem" data-id="${item.itemNo
-            }">Remove</button>
+                        <button class="removeItem" data-id="${item.itemNo}">Remove</button>
                     </div>
 
                 </section>
 
                 <section id="qsec" class="main-section">
-                    <button class="itemAdder minusQ" data-id="${item.itemNo
-            }">-</button>
+                    <button class="itemAdder minusQ" data-id="${item.itemNo}">-</button>
                     ${item.quantity}
                     <button class="itemAdder plusQ" data-id="${item.itemNo
             }">+</button>
