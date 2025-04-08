@@ -267,7 +267,7 @@ main{
 
 .checkoutbtn:hover span::before{
     opacity: 1;
-    transform: scale(50);
+    transform: scale(70);
     transition: transform .45s ease-out;
 }
 
