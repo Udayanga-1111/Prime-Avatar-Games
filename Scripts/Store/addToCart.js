@@ -143,19 +143,3 @@ const backBtn = document.querySelector(".backBtn");
 backBtn.addEventListener("click", () => {
     history.back();
 });
-
-// const mediaQuery = window.matchMedia("(max-width: 700px");
-
-const viewCart = document.getElementById("viewCart");
-const closeCart = document.getElementById("closeCart");
-const tableContainer = document.querySelector(".tableContainer");
-const body = document.querySelector("body");
-
-viewCart.addEventListener("click", () => {
-    tableContainer.style.zIndex = "12";
-    tableContainer.style.display = "flex";
-});
-
-closeCart.addEventListener("click", () => {
-    tableContainer.style.display = "none";
-});
