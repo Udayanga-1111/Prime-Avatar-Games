@@ -154,7 +154,6 @@ const body = document.querySelector("body");
 viewCart.addEventListener("click", () => {
     tableContainer.style.zIndex = "12";
     tableContainer.style.display = "flex";
-    tableContainer.style.animation = "slideup .5s ease-in-out";
 });
 
 closeCart.addEventListener("click", () => {
