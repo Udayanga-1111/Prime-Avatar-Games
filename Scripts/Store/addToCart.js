@@ -66,6 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
         finalPrice.innerText = `$ ${totalAmount}`;
         cartTable.appendChild(row);
 
+        localStorage.setItem("itemCount", cart.length);
+        localStorage.setItem("subTotal", rawTotal.toFixed(2));
+        localStorage.setItem("Discount", totalDiscount.toFixed(2));
+        localStorage.setItem("Tax", taxAmount);
         localStorage.setItem("Total", totalAmount);
     });
 

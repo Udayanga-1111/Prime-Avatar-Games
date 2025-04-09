@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./Stylesheets/Reset css.css">
     <link rel="stylesheet" href="./Stylesheets/payments.css">
+    <script src="./Scripts/Store/Payments.js" defer></script>
 </head>
 
 <body>
@@ -30,6 +31,41 @@
     </header>
 
     <main>
+
+        <section class="orderInfoContainer">
+
+            <table id="orderInfoTable">
+                
+                <h2 class="orderInfoTitle">Order Info</h2>
+                
+                <tr>
+                    <td>Total Items:</td>
+                    <td id="totalItems"></td>
+                </tr>
+                <tr>
+                    <td>Sub Total:</td>
+                    <td id="subTotal"></td>
+                </tr>
+                <tr>
+                    <td>Discount:</td>
+                    <td id="discount"></td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td id="tax"></td>
+                </tr>
+
+                <tr>
+                    <td>Final Price:</td>
+                    <td id="finalPrice"></td>
+                </tr>
+            </table>
+
+            <button name="Deatails" id="payBtn">
+                <span></span>
+                Pay
+            </button>
+        </section>
 
         <section class="formContainer">
 
@@ -58,10 +94,14 @@
                 <section class="paymentMethodSelection">
                     <form id="paymentOptions">
     
-                            <input type="radio" name="paymentMethod" id="visaRadio">
-                            <label for="visaRadio">visa card</label>
-                            <input type="radio" name="paymentMethod" id="paypalRadio">
+                        <p>
+                            <input type="radio" name="paymentMethod" id="visaRadio" value="visa" checked>
+                            <label for="visaRadio">Visa Card</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="paymentMethod" id="paypalRadio" value="paypal">
                             <label for="paypalRadio">Paypal</label>
+                        </p>
                     </form>
                 </section>
     
@@ -73,15 +113,21 @@
                             <input class="inputSections" type="text" name="Details" id="cardNumber" required>
                         </p>
     
-                        <label for="exDate">Ex. Date:</label>
-                        <input class="inputSections" type="text" name="Details" id="exDate" required>
-    
-                        <label for="code">Code</label>
-                        <input class="inputSections" type="number" name="Details" id="code" required>
+                        <div id="cardDetails">
+                            <p>
+                            <label for="exDate">Ex. Date:</label>
+                            <input class="inputSections" type="text" name="Details" id="exDate" required>
+                            </p>
+                            
+                            <p>
+                                <label for="code">Code:</label>
+                                <input class="inputSections" type="number" name="Details" id="code" required inputmode="numeric" maxlength="3" max="999">
+                            </p>
+                        </div>
                     </form>
     
                     
-                    <form id="paypalPaymentOptions">
+                    <form id="paypalPaymentDetails">
                         <span id="spanTitle">Payment Details</span>
                         
                         <p>
