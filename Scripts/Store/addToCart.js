@@ -65,6 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
         totalPrice.innerText = `$ ${totalAmount}`;
         finalPrice.innerText = `$ ${totalAmount}`;
         cartTable.appendChild(row);
+
+        localStorage.setItem("Total", totalAmount);
     });
 
     // Handle remove item functionality ============================================================
