@@ -31,53 +31,74 @@
 
     <main>
 
-        <section class="personalDetailsSection">
-            <form id="personalDetails">
-                <caption>Personal Details</caption>
-                <p>
-                    <label for="name">Your Name:</label>
-                    <input type="text" required name="Details" id="name">
-                </p>
+        <section class="formContainer">
 
-                <p>
-                    <label for="address">Address:</label>
-                    <textarea name="Details" id="address" required></textarea>
-                </p>
-
-                <p>
-                    <label for="number">Phone Number</label>
-                    <input type="tel" name="Details" id="number" required>
-                </p>
-            </form>
-        </section>
-
-        <section class="paymentContainer">
-
-            <section class="paymentMethodSelection">
-                <form id="paymentOptions">
-
-                        <input type="radio" name="paymentMethod" id="visaRadio">
-                        <label for="visaRadio">visa card</label>
-                        <input type="radio" name="paymentMethod" id="paypalRadio">
-                        <label for="paypalRadio">Paypal</label>
-                </form>
-            </section>
-
-            <section class="paymentDetailsSection">
-                <form id="visaPaymentDetails">
-                    <caption>Payment Details</caption>
+            <section class="personalDetailsSection">
+                <form id="personalDetails">
+                    <span id="spanTitle">Personal Details</span>
                     <p>
-                        <label for="cardNumber">Card Number:</label>
-                        <input type="text" name="Details" id="cardNumber" required>
+                        <label for="name">Your Name:</label>
+                        <input class="inputSections" type="text" required name="Details" id="name">
                     </p>
-
-                    <label for="exDate">Ex. Date:</label>
-                    <input type="text" name="Details" id="exDate" required>
-
-                    <label for="code">Code</label>
-                    <input type="number" name="Details" id="code" required>
+    
+                    <p>
+                        <label for="address">Address:</label>
+                        <textarea class="inputSections" name="Details" id="address" required></textarea>
+                    </p>
+    
+                    <p>
+                        <label for="number">Phone Number</label>
+                        <input class="inputSections" type="tel" name="Details" id="number" required>
+                    </p>
                 </form>
             </section>
+    
+            <section class="paymentContainer">
+    
+                <section class="paymentMethodSelection">
+                    <form id="paymentOptions">
+    
+                            <input type="radio" name="paymentMethod" id="visaRadio">
+                            <label for="visaRadio">visa card</label>
+                            <input type="radio" name="paymentMethod" id="paypalRadio">
+                            <label for="paypalRadio">Paypal</label>
+                    </form>
+                </section>
+    
+                <section class="paymentDetailsSection">
+                    <form id="visaPaymentDetails">
+                        <span id="spanTitle">Payment Details</span>
+                        <p>
+                            <label for="cardNumber">Card Number:</label>
+                            <input class="inputSections" type="text" name="Details" id="cardNumber" required>
+                        </p>
+    
+                        <label for="exDate">Ex. Date:</label>
+                        <input class="inputSections" type="text" name="Details" id="exDate" required>
+    
+                        <label for="code">Code</label>
+                        <input class="inputSections" type="number" name="Details" id="code" required>
+                    </form>
+    
+                    
+                    <form id="paypalPaymentOptions">
+                        <span id="spanTitle">Payment Details</span>
+                        
+                        <p>
+                            <label for="paypalEmail">Email</label>
+                            <input class="inputSections" type="email" name="Details" id="paypalEmail" required>
+                        </p>
+    
+                        <p>
+                            <label for="Username">Username</label>
+                            <input class="inputSections" type="text" name="Details" id="Username" required>
+                        </p>
+    
+                    </form>
+    
+                </section>
+            </section>
+
         </section>
 
     </main>
