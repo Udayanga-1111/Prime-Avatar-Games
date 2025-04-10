@@ -95,14 +95,17 @@ header{
 
 main{
     width: 70vw;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 115px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .formContainer{
-    width: 100%;
+    background-color: rgb(14, 14, 14);
+    border-radius: 20px;
+    width: 80%;
     height: 100%;
 
     display: flex;
@@ -115,8 +118,6 @@ main{
 /*===== Details Section =============================================*/
 
 .personalDetailsSection, .paymentDetailsSection{
-    background-color: rgb(14, 14, 14);
-    border-radius: 20px;
     width: 40vw;
 
     display: flex;
@@ -209,7 +210,6 @@ main{
 /*===== Payment Option Section ===============================================*/
 
 .paymentMethodSelection{
-    background-color: rgb(14, 14, 14);
     border-radius: 20px;
     width: 40vw;
     height: 100px;
@@ -235,7 +235,7 @@ main{
 /*===== Order Info Table =====================================================*/
 .orderInfoContainer{
     width: 30vw;
-    height: 60vh;
+    height: 100%;
     background-color: rgb(14, 14, 14);
     border-radius: 20px;
 
@@ -248,6 +248,7 @@ main{
 .orderInfoTitle{
     font-family: var(--Title-font);
     color: var(--accent-color);
+    text-align: center;
 }
 
 #orderInfoTable{
