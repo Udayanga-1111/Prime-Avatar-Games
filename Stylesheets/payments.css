@@ -242,6 +242,13 @@ textarea{
     padding: 5px 10px;
 }
 
+#paymentOptions p label:hover{
+    scale: 1.1;
+    background-color: var(--subback-color);
+    transition: all .3s ease-out;
+
+}
+
 #paymentOptions p label svg{
     width: 25px;
     fill: aliceblue;

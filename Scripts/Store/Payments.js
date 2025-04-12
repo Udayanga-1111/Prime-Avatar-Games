@@ -1,6 +1,7 @@
 const paymentOpt = document.getElementsByName("paymentMethod");
 const visaOption = document.getElementById("visaPaymentDetails");
 const paypalOption = document.getElementById("paypalPaymentDetails");
+const visaOptionLabel = document
 
 const Total = document.getElementById("finalPrice");
 const totalItems = document.getElementById("totalItems");
