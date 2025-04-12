@@ -212,7 +212,7 @@ textarea{
     gap: 30px;
 }
 
-#paypalPaymentDetails{
+#paypalPaymentDetails, #visaPaymentDetails{
     display: none;
 }
 
@@ -243,8 +243,8 @@ textarea{
 }
 
 #paymentOptions p label:hover{
-    scale: 1.1;
-    background-color: var(--subback-color);
+    scale: 1.05;
+    background-color: var(--subback-color) !important;
     transition: all .3s ease-out;
 
 }
