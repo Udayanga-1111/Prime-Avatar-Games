@@ -17,10 +17,8 @@ body{
     background-color: black;
     overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
 
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -41,12 +39,15 @@ a{
 /*===== Cart Header ===================================================*/
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 100px;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+#header02{
+    justify-content: end;
 }
 
 .logoSection{
@@ -94,34 +95,37 @@ header{
 /*===== Main Section =========================================================*/
 
 main{
-    width: 70vw;
-    height: calc(100vh - 115px);
+    height:100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
-.formContainer{
+#main01{
+    grid-column: 1/2;
+    align-items: end;
+}
+
+#main02{
+    grid-column: 2/3;
     background-color: rgb(14, 14, 14);
+}
+
+.formContainer{
     border-radius: 20px;
     width: 80%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
+    padding-left:30px;
 }
 
 /*===== Details Section =============================================*/
 
 .personalDetailsSection, .paymentDetailsSection{
-    width: 40vw;
-
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 10px 0;
 }
@@ -132,7 +136,7 @@ main{
     gap: 20px;
 }
 
-#spanTitle{
+.spanTitle{
     color: var(--accent-color) !important;
     font-size: 30px;
     font-family: var(--Title-font);
@@ -142,14 +146,14 @@ main{
     width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 #visaPaymentDetails{
     width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 
 }
 
@@ -164,8 +168,13 @@ main{
     border-radius: 10px;
     color: rgb(104, 104, 104);
     padding: 2px;
+    height:35px;
     width: 18vw;
     max-width: 18vw;
+}
+
+textarea{
+    height: 60px !important;
 }
 
 #visaRadio, #paypalRadio{
@@ -192,15 +201,15 @@ main{
 }
 
 #cardDetails{
-    width: 80%;
+    width: 100%;
     display: flex !important;
     justify-content: space-between;
-    gap: 20px;
 }
 
 #cardDetails p{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 #paypalPaymentDetails{
@@ -210,12 +219,10 @@ main{
 /*===== Payment Option Section ===============================================*/
 
 .paymentMethodSelection{
-    border-radius: 20px;
-    width: 40vw;
+    width: 100%;
     height: 100px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -226,33 +233,47 @@ main{
     font-size: 24px;
 }
 
-#paymentOptions p{
-    width: 200px;
+#paymentOptions p label{
     display: flex;
     justify-content: space-evenly;
+    width: 200px;
+    border: 2px solid var(--subback-color);
+    border-radius: 10px;
+    padding: 5px 10px;
 }
+
+#paymentOptions p label svg{
+    width: 25px;
+    fill: aliceblue;
+}
+
+#paymentOptions p input{
+    display: none;
+}
+
 
 /*===== Order Info Table =====================================================*/
 .orderInfoContainer{
-    width: 30vw;
+    padding: 10px 30px;
+    width: 60%;
     height: 100%;
-    background-color: rgb(14, 14, 14);
     border-radius: 20px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-items: end;
 }
 
 .orderInfoTitle{
+    float: left;
     font-family: var(--Title-font);
     color: var(--accent-color);
-    text-align: center;
+    text-align: left;
 }
 
 #orderInfoTable{
-    width: 80%;
+    width: 100%;
+    height: fit-content;
 }
 
 #orderInfoTable tr td:nth-child(2){
@@ -266,7 +287,7 @@ main{
 #payBtn{
     color: var(--text-color);
     background-color: transparent;
-    width: 20vw;
+    width: 80%;
     height: 50px;
     border: 2px solid var(--subback-color);
     border-radius: 10px;
