@@ -47,8 +47,66 @@
             "itemName":"Glorious GMMK",
             "itemPrice":160.30,
             "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p7",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/01-AMD-Ryzen_5_56000X.webp",
+            "itemName":"AMD Ryzen 5 5600X",
+            "itemPrice":144.24,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p8",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/06-AMD_Ryzen_5_8600G.webp",
+            "itemName":"AMD Ryzen 5 8600G",
+            "itemPrice":144.24,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p9",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/02-AMD-Ryzen_7_7800X3D.webp",
+            "itemName":"AMD Ryzen 7 7800X3D",
+            "itemPrice":144.24,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p10",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/03-Intel_Core_i3_14100.webp",
+            "itemName":"Intel Core i3 14100",
+            "itemPrice":144.24,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p11",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/04-IntelCore_i5_14400.webp",
+            "itemName":"Intel Core i5 14400",
+            "itemPrice":144.24,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p12",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/05-IntelCore_i7_12700.webp",
+            "itemName":"Intel Core i7 12700",
+            "itemPrice":144.24,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p13",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/rams/01-Crosair Dominator_Platinum_RGB_32GB.webp",
+            "itemName":"Crosair Dominator Platinum RGB 32GB",
+            "itemPrice":144.24,
+            "itemDiscount":"0"
         }
     ],
+
+
     "consoles":[
         {
             "itemNo":"c1",
