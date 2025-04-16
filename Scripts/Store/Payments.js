@@ -89,3 +89,9 @@ function payment(event) {
         }
     }
 };
+
+const backBtn = document.querySelector(".backBtn");
+
+backBtn.addEventListener("click", () => {
+    history.back();
+});

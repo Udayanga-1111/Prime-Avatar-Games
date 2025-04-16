@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     <div class="cartItemDetails">
                         <p>${item.itemName}</p>
-                        <p>${item.itemPrice}</p>
+                        <p>${item.itemPrice} LKR</p>
                         <button class="removeItem" data-id="${item.itemNo}">Remove</button>
                     </div>
 
@@ -49,21 +49,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 </section>
 
                 <section class ="main-section currencySec">
-                    <p>$ ${subTotal.toFixed(2)}</p>
+                    <p>${subTotal.toFixed(2)}</p>
                 </section>
             </td>
         `;
 
         // Order calculations ======================================================================
         itemCount.innerText = cart.length;
-        subTotalSec.innerText = `$ ${rawTotal.toFixed(2)}`;
-        discountSec.innerText = `$ ${totalDiscount.toFixed(2)}`;
+        subTotalSec.innerText = `${rawTotal.toFixed(2)} LKR`;
+        discountSec.innerText = `${totalDiscount.toFixed(2)} LKR`;
         let totalWithoutTax = (rawTotal - totalDiscount).toFixed(2);
         let taxAmount = ((totalWithoutTax * 0.2) / 100).toFixed(2);
-        taxSec.innerText = `$ ${taxAmount}`;
+        taxSec.innerText = `${taxAmount} LKR`;
         let totalAmount = (rawTotal - totalDiscount + Number(taxAmount)).toFixed(2);
-        totalPrice.innerText = `$ ${totalAmount}`;
-        finalPrice.innerText = `$ ${totalAmount}`;
+        totalPrice.innerText = `${totalAmount} LKR`;
+        finalPrice.innerText = `${totalAmount} LKR`;
         cartTable.appendChild(row);
 
         localStorage.setItem("itemCount", cart.length);

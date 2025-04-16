@@ -151,6 +151,7 @@ main{
     display: flex;
     align-items: center;
     padding: 10px;
+    gap: 20px;
 }
 
 /*--- TD Sections ---*/
@@ -195,13 +196,16 @@ main{
 }
 
 .itemAdder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid var(--subback-color);
     color: var(--text-color);
-    margin: 0 5px;
 }
 
 .itemAdder:hover{

@@ -9,7 +9,7 @@ const addToHtml = function () {
     
             <section class="item-details">
                 <h2 class="item-name">${product.itemName}</h2>
-                <h4 class="price">$${product.itemPrice}</h4>
+                <h4 class="price">${product.itemPrice} LKR</h4>
                 <button class="addToCart none" id="${product.itemNo}">Add To Cart</button>
             </section>
             

@@ -5,7 +5,7 @@
             "itemClass":"mouse",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/Glorious-Model_D.webp",
             "itemName":"Glorious Model D",
-            "itemPrice":61.39,
+            "itemPrice":10500.00,
             "itemDiscount":"20.50"
         },
         {
@@ -13,7 +13,7 @@
             "itemClass":"monitor",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/34-Curved-Monitor.webp",
             "itemName":"34 Curved Gaming Monitor",
-            "itemPrice":627.56,
+            "itemPrice":53000.00,
             "itemDiscount":"10.50"
         },
         {
@@ -21,7 +21,7 @@
             "itemClass":"router",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/RT-AX82U-V2.webp",
             "itemName":"RT-AX82U",
-            "itemPrice":281.38,
+            "itemPrice":84000.00,
             "itemDiscount":"14"
         },
         {
@@ -29,7 +29,7 @@
             "itemClass":"simulator",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/Gaming-Chair(GT-fordable).webp",
             "itemName":"GT Simulator Cockpit",
-            "itemPrice":494.55,
+            "itemPrice":147500.00,
             "itemDiscount":"5"
         },
         {
@@ -37,7 +37,7 @@
             "itemClass":"simulator",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/g29-logitech-ps4.webp",
             "itemName":"G29 Racing Wheel",
-            "itemPrice":1012.97,
+            "itemPrice":302000.00,
             "itemDiscount":"34"
         },
         {
@@ -45,7 +45,7 @@
             "itemClass":"keyboard",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/gmmk-black-compact.webp",
             "itemName":"Glorious GMMK",
-            "itemPrice":160.30,
+            "itemPrice":17500.00,
             "itemDiscount":"0"
         },
         {
@@ -53,7 +53,7 @@
             "itemClass":"processor",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/01-AMD-Ryzen_5_56000X.webp",
             "itemName":"AMD Ryzen 5 5600X",
-            "itemPrice":144.24,
+            "itemPrice":43000.00,
             "itemDiscount":"0"
         },
         {
@@ -61,7 +61,7 @@
             "itemClass":"processor",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/06-AMD_Ryzen_5_8600G.webp",
             "itemName":"AMD Ryzen 5 8600G",
-            "itemPrice":144.24,
+            "itemPrice":56500.00,
             "itemDiscount":"0"
         },
         {
@@ -69,7 +69,7 @@
             "itemClass":"processor",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/02-AMD-Ryzen_7_7800X3D.webp",
             "itemName":"AMD Ryzen 7 7800X3D",
-            "itemPrice":144.24,
+            "itemPrice":161500.00,
             "itemDiscount":"0"
         },
         {
@@ -77,7 +77,7 @@
             "itemClass":"processor",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/03-Intel_Core_i3_14100.webp",
             "itemName":"Intel Core i3 14100",
-            "itemPrice":144.24,
+            "itemPrice":41000.00,
             "itemDiscount":"0"
         },
         {
@@ -85,7 +85,7 @@
             "itemClass":"processor",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/04-IntelCore_i5_14400.webp",
             "itemName":"Intel Core i5 14400",
-            "itemPrice":144.24,
+            "itemPrice":56000.00,
             "itemDiscount":"0"
         },
         {
@@ -93,7 +93,7 @@
             "itemClass":"processor",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/processors/05-IntelCore_i7_12700.webp",
             "itemName":"Intel Core i7 12700",
-            "itemPrice":144.24,
+            "itemPrice":80500.00,
             "itemDiscount":"0"
         },
         {
@@ -101,7 +101,47 @@
             "itemClass":"ram",
             "imgSrc":"./Stylesheets/Images/Peripherals-Images/rams/01-Crosair Dominator_Platinum_RGB_32GB.webp",
             "itemName":"Crosair Dominator Platinum RGB 32GB",
-            "itemPrice":144.24,
+            "itemPrice":39500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p14",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/rams/02-CrosairDominatorTiitatium_RGB_32GB.webp",
+            "itemName":"Crosair Dominator Titanium RGB 32GB",
+            "itemPrice":65000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p15",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/rams/03-Adata_XPG_Gammix_16GB.webp",
+            "itemName":"Adata XPG Gammix 16GB",
+            "itemPrice":13500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p16",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/rams/04-CrosairVengeance_32GB.webp",
+            "itemName":"Crosair Vengeance 32GB",
+            "itemPrice":11500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p17",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/rams/05-CrosairVengeance_RGB_LPX_16GB.webp",
+            "itemName":"Crosair Vengeance RGB LPX 16GB",
+            "itemPrice":19500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"p18",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Peripherals-Images/rams/06-CrosairVengeance_RGB_64GB(2x32).webp",
+            "itemName":"Crosair Vengeance RGB 64GB(2x32)",
+            "itemPrice":83000.00,
             "itemDiscount":"0"
         }
     ],
@@ -113,7 +153,7 @@
             "itemClass":"PS",
             "imgSrc":"./Stylesheets/Images/Console-Images/PS-4-Slim.webp",
             "itemName":"Play Station 4 Slim ",
-            "itemPrice":392.23,
+            "itemPrice":116000.00,
             "itemDiscount":"0"
         },
         {
@@ -121,7 +161,7 @@
             "itemClass":"xbox",
             "imgSrc":"./Stylesheets/Images/Console-Images/X-box_Series_X.webp",
             "itemName":"X Box Series X",
-            "itemPrice":648,
+            "itemPrice":193000.00,
             "itemDiscount":"0"
         },
         {
@@ -129,7 +169,7 @@
             "itemClass":"plays",
             "imgSrc":"./Stylesheets/Images/Console-Images/RG353VS-black.webp",
             "itemName":"RG353VS",
-            "itemPrice":112.55,
+            "itemPrice":33400.00,
             "itemDiscount":"0"
         },
         {
@@ -137,7 +177,7 @@
             "itemClass":"plays",
             "imgSrc":"./Stylesheets/Images/Console-Images/Legion_GO.webp",
             "itemName":"Ligion Go",
-            "itemPrice":1190.32,
+            "itemPrice":354900.00,
             "itemDiscount":"0"
         },
         {
@@ -145,7 +185,7 @@
             "itemClass":"xbox",
             "imgSrc":"./Stylesheets/Images/Console-Images/X-Box-Series_S.webp",
             "itemName":"X Box Series S",
-            "itemPrice":409.28,
+            "itemPrice":121900.00,
             "itemDiscount":"0"
         },
         {
@@ -153,7 +193,7 @@
             "itemClass":"PS",
             "imgSrc":"./Stylesheets/Images/Console-Images/PS-5-Pro_Console-2TB.webp",
             "itemName":"PS 5 proConsole",
-            "itemPrice":1012.97,
+            "itemPrice":301800.00,
             "itemDiscount":"0"
         }
     ]
