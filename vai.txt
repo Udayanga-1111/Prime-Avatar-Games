@@ -1,0 +1,28 @@
+        <ol class="navigation olbasic">
+
+            <li><a class="selected3 navLinks" href="./index.html">Home</a></li>
+            <li><a class="navLinks" href="./About-us.html">About us</a></li>
+            <li><a class="navLinks" href="./Games.html">Games</a></li>
+            <li><a class="navLinks" href="./Upcoming-Games.html">Upcoming Games</a></li>
+            <li id="drop">
+                <a class="navLinks" href="./Consoles.html">Store</a>
+
+                <ol class="olbasic" id="dropdown">
+                    <div class="navSec">
+                        <li>
+                            <a href="./Consoles.html">&rarr; Consoles</a>
+
+                            <div class="consoleFilterContainer">
+                                button
+                            </div>
+                        </li>
+                        <li><a href="./Peripherals.html">&rarr; Peripherals</a></li>
+                        <li><a href="./Accessories.html">&rarr; Accessories</a></li>
+                    </div>
+                </ol>
+
+            </li>
+
+            <li><a class="navLinks" href="./Faq.html">FAQs</a></li>
+
+        </ol>

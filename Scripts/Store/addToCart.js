@@ -87,10 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".plusQ").forEach((button) => {
         button.addEventListener("click", (event) => {
             let itemId = event.target.dataset.id;
-            console.log(itemId);
             cart.forEach((item) => {
                 if (itemId == item.itemNo) {
-                    item.quantity++;
+                    if (item.itemPrice<=100000 && item.quantity < 10) {
+                        item.quantity++;
+                    } else if(item.quantity < 5){
+                        item.quantity++;
+                    } else {
+                        alert("maximum quantity reached!!")
+                    }
                 }
             });
             localStorage.setItem("cart", JSON.stringify(cart));
@@ -102,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".minusQ").forEach((button) => {
         button.addEventListener("click", (event) => {
             let itemId = event.target.dataset.id;
-            console.log(itemId);
             cart.forEach((item) => {
                 if (itemId == item.itemNo) {
                     if (item.quantity > 1) {
