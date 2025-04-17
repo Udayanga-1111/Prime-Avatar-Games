@@ -170,27 +170,9 @@ nav{
     border-radius: 15px;
 }
 
-.navigation li::after, #drop a::after{
-    content: '';
-    display: block;
-    position: relative;
-    width: 0;
-    height: 2px;
-    background-color: var(--text-color);
-}
-
-.navigation a:hover li::after, #drop:hover a::after{
-    width: 100%;
-    transition: .3s ease-out;
-}
-
-#drop:hover #dropdown a::after{
-    width: 0;
-}
-
 #dropdown{
     margin-top: 4px;
-    background-color:black;
+    background-color:rgb(0, 0, 0);
     position: absolute;
     display: none !important;
     display: flex;
@@ -200,13 +182,17 @@ nav{
     width: 600px;
     height: 200px;
     border-radius: 15px;
-    border: 2px solid var(--accent-color);
+    border: 1px solid var(--subback-color);
     transform: translateX(-85%);
 }
 
 
 #dropdown li{
     width: 200px;
+}
+
+#dropdown li:hover a{
+    color: var(--accent-color);
 }
 
 #dropdown a{
@@ -244,11 +230,12 @@ nav{
 
 .filterContainer button:hover{
     color: var(--accent-color);
+    cursor: pointer;
 }
 
 #peripheralsFilterContainer,#accessoriesFilterContainer{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .subFilterSections{
