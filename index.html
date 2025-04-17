@@ -41,40 +41,79 @@
 
         <nav>
 
-                    <!-- Search bar -->
-        <form id="search_bar">
+            <!-- Search bar -->
+            <form id="search_bar">
 
-            <input type="text" id="search" placeholder="Search">
+                <input type="text" id="search" placeholder="Search">
 
-            <button id="searchbutton" type="submit">
+                <button id="searchbutton" type="submit">
 
-                <img class="icons_3" src="./Stylesheets/Images/search-interface-symbol.png">
+                    <img class="icons_3" src="./Stylesheets/Images/search-interface-symbol.png">
 
-            </button>
+                </button>
 
-        </form>
+            </form>
 
-        <!-- menu list -->
-        <ol class="navigation">
+            <!-- menu list -->
+            <ol class="navigation olbasic">
 
-            <a class="selected3" href="./index.html"><li>Home</li></a>
-            <a href="./About-us.html"><li>About us</li></a>
-            <a href="./Games.html"><li>Games</li></a>
-            <a href="./Upcoming-Games.html"><li>Upcoming Games</li></a>
-            <li id="drop"><a href="./Consoles.html">Store</a>
+                <li><a class="selected3 navLinks" href="./index.html">Home</a></li>
+                <li><a class="navLinks" href="./About-us.html">About us</a></li>
+                <li><a class="navLinks" href="./Games.html">Games</a></li>
+                <li><a class="navLinks" href="./Upcoming-Games.html">Upcoming Games</a></li>
+                <li id="drop">
+                    <a class="navLinks">Store</a>
 
-                <ol class="olbasic" id="dropdown">
-                    <a href="./Consoles.html"><li>Consoles</li></a>
-                    <li><hr></li>
-                    <a href="./Peripherals.html"><li>Peripherals</li></a>
-                </ol>
+                    <ol class="olbasic" id="dropdown">
+                            <li id="consoleLink">
+                                <a href="./Consoles.html">&rarr; Consoles</a>
 
-            </li>
+                                    <div id="consoleFilterContainer" class="filterContainer">
+                                        <button>Play Stations</button>
+                                        <button>X box</button>
+                                        <button>Plays</button>
+                                    </div>
+                            </li>
+                            
+                            <li id="periLink">
+                                <a href="./Peripherals.html">&rarr; Peripherals</a>
+                                
+                                <div id="peripheralsFilterContainer" class="filterContainer">
+                                    <div class="subFilterSections">
+                                        <button>Keyboards</button>
+                                        <button>Mouse</button>
+                                        <button>Chairs</button>
+                                    </div>
+                                    <div class="subFilterSections">
+                                        <button>Monitors</button>
+                                        <button>Routers</button>
+                                    </div>
+                                </div>
 
-            <a href="./Faq.html"><li>FAQs</li></a>
+                            </li>
+                            <li id="accLink">
+                                <a href="./Accessories.html">&rarr; Accessories</a>
+                            
+                                <div id="accessoriesFilterContainer" class="filterContainer">
+                                    <div class="subFilterSections">
+                                        <button>Processors</button>
+                                        <button>Memory Cards</button>
+                                        <button>Motherboards</button>
+                                    </div>
+                                    <div class="subFilterSections"
+                                        <button>Graphic Cards</button>
+                                        <button>Storage Devices</button>
+                                    </div>
+                                </div>
 
-        </ol>
+                            </li>
+                    </ol>
 
+                </li>
+
+                <li><a class="navLinks" href="./Faq.html">FAQs</a></li>
+
+            </ol>
 
         </nav>
 
