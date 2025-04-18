@@ -24,6 +24,7 @@
     <script src="./Scripts/Animations/homeAnimation.js" defer></script>
     <script src="./Scripts/Animations/Hamburger.js" defer></script>
     <script src="./Scripts/Store/searchbar.js" defer></script>
+    <script src="./Scripts/navigation/navigation.js" defer></script>
     
 </head>
 
@@ -66,27 +67,28 @@
 
                     <ol class="olbasic" id="dropdown">
                             <li id="consoleLink">
-                                <a href="./Consoles.html">&rarr; Consoles</a>
+                                <a href="./Consoles.html"  id="consoleLink">&rarr; Consoles</a>
 
-                                    <div id="consoleFilterContainer" class="filterContainer">
-                                        <button>Play Stations</button>
-                                        <button>X box</button>
-                                        <button>Plays</button>
-                                    </div>
+                                <div id="consoleFilterContainer" class="filterContainer">
+                                    <button id="psFilter">Play Stations</button>
+                                    <button id="xboxFilter">X box</button>
+                                    <button id="playsFilter">Plays</button>
+                                </div>
                             </li>
                             
                             <li id="periLink">
-                                <a href="./Peripherals.html">&rarr; Peripherals</a>
+                                <a href="./Peripherals.html" id="peripheralsLink">&rarr; Peripherals</a>
                                 
                                 <div id="peripheralsFilterContainer" class="filterContainer">
                                     <div class="subFilterSections">
-                                        <button>Keyboards</button>
-                                        <button>Mouse</button>
-                                        <button>Chairs</button>
+                                        <button id="keyboardFilter">Keyboards</button>
+                                        <button id="mouseFilter">Mouse</button>
+                                        <button id="chairFilter">Chairs</button>
+                                        <button id="simulatorFilter">Simulator</button>
                                     </div>
                                     <div class="subFilterSections">
-                                        <button>Monitors</button>
-                                        <button>Routers</button>
+                                        <button id="monitorFilter">Monitors</button>
+                                        <button id="routerFilter">Routers</button>
                                     </div>
                                 </div>
 
@@ -96,13 +98,13 @@
                             
                                 <div id="accessoriesFilterContainer" class="filterContainer">
                                     <div class="subFilterSections">
-                                        <button>Processors</button>
-                                        <button>Memory Cards</button>
-                                        <button>Motherboards</button>
+                                        <button id="processorFilter">Processors</button>
+                                        <button id="ramFilter">Memory Cards</button>
+                                        <button id="motherboardFilter">Motherboards</button>
                                     </div>
                                     <div class="subFilterSections">
-                                        <button>Graphic Cards</button>
-                                        <button>Storage Devices</button>
+                                        <button id="graphicCardFilter">Graphic Cards</button>
+                                        <button id="storageFilter">Storage Devices</button>
                                     </div>
                                 </div>
 
