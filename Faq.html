@@ -11,6 +11,7 @@
 
     <script src="./Scripts/Animations/Hamburger.js" defer></script>
     <script src="./Scripts/Store/cartNotify.js" defer></script>
+    <script src="./Scripts/navigation/navigation.js" defer></script> <!--for the navigation bar-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,42 +31,82 @@
         </section>
 
         <nav>
-
-                    <!-- Search bar -->
-        <form id="search_bar">
-
-            <input type="text" id="search" placeholder="Search">
-
-            <button id="searchbutton" type="submit">
-
-                <img class="icons_3" src="./Stylesheets/Images/search-interface-symbol.png">
-
-            </button>
-
-        </form>
-
-        <!-- menu list -->
-        <ol class="navigation">
-
-            <a href="./index.html"><li>Home</li></a>
-            <a href="./About-us.html"><li>About us</li></a>
-            <a href="./Games.html"><li>Games</li></a>
-            <a href="./Upcoming-Games.html"><li>Upcoming Games</li></a>
-            <li id="drop"><a href="./Consoles.html">Store</a>
-
-                <ol class="olbasic" id="dropdown">
-                    <a href="./Consoles.html"><li>Consoles</li></a>
-                    <li><hr></li>
-                    <a href="./Peripherals.html"><li>Peripherals</li></a>
-                </ol>
-
-            </li>
-
-            <a class="selected3" href="./Faq.html"><li>FAQs</li></a>
-
-        </ol>
-
-
+        
+            <!-- Search bar -->
+            <form id="search_bar">
+        
+                <input type="text" id="search" placeholder="Search">
+        
+                <button id="searchbutton" type="submit">
+        
+                    <img class="icons_3" src="./Stylesheets/Images/search-interface-symbol.png">
+        
+                </button>
+        
+            </form>
+        
+            <!-- menu list -->
+            <ol class="navigation olbasic">
+        
+                <li><a class="navLinks" href="./index.html">Home</a></li>
+                <li><a class="navLinks" href="./About-us.html">About us</a></li>
+                <li><a class="navLinks" href="./Games.html">Games</a></li>
+                <li><a class="navLinks" href="./Upcoming-Games.html">Upcoming Games</a></li>
+                <li id="drop">
+                    <a class="navLinks">Store</a>
+        
+                    <ol class="olbasic" id="dropdown">
+                        <li id="consoleLink">
+                            <a href="./Consoles.html" id="consoleLink" onclick="setDefault()">&rarr; Consoles</a>
+        
+                            <div id="consoleFilterContainer" class="filterContainer">
+                                <button id="psFilter">Play Stations</button>
+                                <button id="xboxFilter">X box</button>
+                                <button id="playsFilter">Plays</button>
+                            </div>
+                        </li>
+        
+                        <li id="periLink">
+                            <a href="./Peripherals.html" id="peripheralsLink">&rarr; Peripherals</a>
+        
+                            <div id="peripheralsFilterContainer" class="filterContainer">
+                                <div class="subFilterSections">
+                                    <button id="keyboardFilter">Keyboards</button>
+                                    <button id="mouseFilter">Mouse</button>
+                                    <button id="chairFilter">Chairs</button>
+                                    <button id="simulatorFilter">Simulator</button>
+                                </div>
+                                <div class="subFilterSections">
+                                    <button id="monitorFilter">Monitors</button>
+                                    <button id="routerFilter">Routers</button>
+                                </div>
+                            </div>
+        
+                        </li>
+                        <li id="accLink">
+                            <a href="./Accessories.html">&rarr; Accessories</a>
+        
+                            <div id="accessoriesFilterContainer" class="filterContainer">
+                                <div class="subFilterSections">
+                                    <button id="processorFilter">Processors</button>
+                                    <button id="ramFilter">Memory Cards</button>
+                                    <button id="motherboardFilter">Motherboards</button>
+                                </div>
+                                <div class="subFilterSections">
+                                    <button id="graphicCardFilter">Graphic Cards</button>
+                                    <button id="storageFilter">Storage Devices</button>
+                                </div>
+                            </div>
+        
+                        </li>
+                    </ol>
+        
+                </li>
+        
+                <li><a class="selected3 navLinks" href="./Faq.html">FAQs</a></li>
+        
+            </ol>
+        
         </nav>
 
         <!-- Login and Sign in -->
