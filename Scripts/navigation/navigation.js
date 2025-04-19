@@ -17,13 +17,9 @@ const motherboard = document.getElementById("motherboardFilter");
 const graphicCard = document.getElementById("graphicCardFilter");
 const storage = document.getElementById("storageFilter");
 
-peripherals.addEventListener("click", () => {
+function setDefault() {
     localStorage.setItem("filterValue", "filterAll");
-})
-
-consoles.addEventListener("click", () => {
-    localStorage.setItem("filterValue", "filterAll");
-})
+}
 
 ps.addEventListener("click", () => {
     localStorage.setItem("filterValue", "filterPS");

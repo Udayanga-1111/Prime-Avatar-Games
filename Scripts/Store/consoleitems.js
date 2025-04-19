@@ -28,11 +28,12 @@ const addToHtml = function () {
     switch (true) {
         case (filterKey == "filterPS"):
             cards.forEach(card => {
-                if (card.classList.contains("PS")) {
+                if (card.classList.contains("ps")) {
                     card.style.display = "flex"; // Show keyboard items
                 }
             });
             break;
+        
         case (filterKey == "filterXbox"):
             cards.forEach(card => {
                 if (card.classList.contains("xbox")) {
@@ -43,7 +44,6 @@ const addToHtml = function () {
         case (filterKey == "filterPlays"):
             cards.forEach(card => {
                 if (card.classList.contains("plays")) {
-                    
                     card.style.display = "flex"; // Show monitor items
                 }
             });

@@ -198,7 +198,7 @@
     "consoles":[
         {
             "itemNo":"c1",
-            "itemClass":"PS",
+            "itemClass":"ps",
             "imgSrc":"./Stylesheets/Images/Console-Images/PS-4-Slim.webp",
             "itemName":"Play Station 4 Slim ",
             "itemPrice":116000.00,
@@ -238,7 +238,7 @@
         },
         {
             "itemNo":"c6",
-            "itemClass":"PS",
+            "itemClass":"ps",
             "imgSrc":"./Stylesheets/Images/Console-Images/PS-5-Pro_Console-2TB.webp",
             "itemName":"PS 5 proConsole",
             "itemPrice":301800.00,
