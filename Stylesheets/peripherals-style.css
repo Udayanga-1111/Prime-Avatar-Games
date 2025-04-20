@@ -133,13 +133,6 @@ main{
     margin-top: 30px;
 }
 
-.item-slot  #shop-more{
-    text-align: center;
-    color: var(--accent-color);
-    text-decoration:underline ;
-    font-size: 20px;
-}
-
 
 .slot-name{
     font-family: var(--Title-font);

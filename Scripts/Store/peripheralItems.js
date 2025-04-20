@@ -20,27 +20,11 @@ const addToHtml = function () {
     })
 
     let filterKey = localStorage.getItem("filterValue");
+    const slotName = document.querySelector(".slot-name");
     const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
         card.style.display = "none"; // Hide all items by default
     })
-    // if (filterKey == "filterKeyboard") {
-    //     cards.forEach(card => {
-    //         if (card.classList.contains("keyboard")) {
-    //             console.log(true);
-                
-    //             card.style.display = "flex"; // Show keyboard items
-    //         }
-    //     });
-    // } else if (filterKey == "filterProcessor") {
-    //     cards.forEach(card => {
-    //         if (card.classList.contains("processor")) {
-    //             console.log(true);
-                    
-    //             card.style.display = "flex"; // Show keyboard items
-    //         }
-    //     })
-    // }
 
     switch (true) {
         case (filterKey == "filterKeyboard"):
@@ -49,6 +33,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show keyboard items
                 }
             });
+            slotName.innerHTML = "Keyboards";
             break;
         case (filterKey == "filterMouse"):
             cards.forEach(card => {
@@ -56,6 +41,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show mouse items
                 }
             });
+            slotName.innerHTML = "Mouses";
             break;
         case (filterKey == "filterMonitor"):
             cards.forEach(card => {
@@ -64,6 +50,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show monitor items
                 }
             });
+            slotName.innerHTML = "Monitors";
             break;
         
         case (filterKey == "filterRouter"):
@@ -72,6 +59,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show router items
                 }
             });
+            slotName.innerHTML = "Routers";
             break;
         
             case (filterKey == "filterChair"):
@@ -80,6 +68,7 @@ const addToHtml = function () {
                         card.style.display = "flex"; // Show router items
                     }
                 });
+                slotName.innerHTML = "Chairs";
                 break;
         
             case (filterKey == "filterSimulator"):
@@ -88,6 +77,7 @@ const addToHtml = function () {
                         card.style.display = "flex"; // Show router items
                     }
                 });
+                slotName.innerHTML = "Simulators";
                 break;
         
             case(filterKey=="filterAll"):
@@ -100,7 +90,7 @@ const addToHtml = function () {
 
 
 const initApp = () => {
-    fetch('./Scripts/Store/peripherals.json') // Ensure the file is in the root directory of the server
+    fetch('./Scripts/Store/items.json') // Ensure the file is in the root directory of the server
         .then(response => response.json())
         .then(data => {
             abc.push(...data.peripherals); // Spread operator to push all items into the array

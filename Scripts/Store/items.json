@@ -47,150 +47,6 @@
             "itemName":"Glorious GMMK",
             "itemPrice":17500.00,
             "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p7",
-            "itemClass":"processor",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/01-AMD-Ryzen_5_56000X.webp",
-            "itemName":"AMD Ryzen 5 5600X",
-            "itemPrice":43000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p8",
-            "itemClass":"processor",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/06-AMD_Ryzen_5_8600G.webp",
-            "itemName":"AMD Ryzen 5 8600G",
-            "itemPrice":56500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p9",
-            "itemClass":"processor",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/02-AMD-Ryzen_7_7800X3D.webp",
-            "itemName":"AMD Ryzen 7 7800X3D",
-            "itemPrice":161500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p10",
-            "itemClass":"processor",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/03-Intel_Core_i3_14100.webp",
-            "itemName":"Intel Core i3 14100",
-            "itemPrice":41000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p11",
-            "itemClass":"processor",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/04-IntelCore_i5_14400.webp",
-            "itemName":"Intel Core i5 14400",
-            "itemPrice":56000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p12",
-            "itemClass":"processor",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/05-IntelCore_i7_12700.webp",
-            "itemName":"Intel Core i7 12700",
-            "itemPrice":80500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p13",
-            "itemClass":"ram",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/01-Crosair Dominator_Platinum_RGB_32GB.webp",
-            "itemName":"Crosair Dominator Platinum RGB 32GB",
-            "itemPrice":39500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p14",
-            "itemClass":"ram",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/02-CrosairDominatorTiitatium_RGB_32GB.webp",
-            "itemName":"Crosair Dominator Titanium RGB 32GB",
-            "itemPrice":65000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p15",
-            "itemClass":"ram",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/03-Adata_XPG_Gammix_16GB.webp",
-            "itemName":"Adata XPG Gammix 16GB",
-            "itemPrice":13500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p16",
-            "itemClass":"ram",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/04-CrosairVengeance_32GB.webp",
-            "itemName":"Crosair Vengeance 32GB",
-            "itemPrice":11500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p17",
-            "itemClass":"ram",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/05-CrosairVengeance_RGB_LPX_16GB.webp",
-            "itemName":"Crosair Vengeance RGB LPX 16GB",
-            "itemPrice":19500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p18",
-            "itemClass":"ram",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/06-CrosairVengeance_RGB_64GB(2x32).webp",
-            "itemName":"Crosair Vengeance RGB 64GB(2x32)",
-            "itemPrice":83000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p19",
-            "itemClass":"motherboard",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/01-AsusRogStrix-Z790(DDR5)Motherboard.webp",
-            "itemName":"Asus Rog Strix Z790 (DDR5) Motherboard",
-            "itemPrice":175000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p20",
-            "itemClass":"motherboard",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/02-AsusTufGamingB550-PluswifiMotherboard.webp",
-            "itemName":"Asus Tuf Gaming B550 Plus WIFI Motherboard",
-            "itemPrice":77000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p21",
-            "itemClass":"motherboard",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/03-AsusPrime-B550M-A_II_DDR4Motherboard.webp",
-            "itemName":"Asus Prime B550M-A II DDR4 Motherboard",
-            "itemPrice":55500.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p22",
-            "itemClass":"motherboard",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/04-AsusPrimeA520M-K(DDR4)MircoATXMotherboard.webp",
-            "itemName":"Asus PrimeA 520M-K (DDR4) Mirco ATX Motherboard",
-            "itemPrice":32000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p23",
-            "itemClass":"motherboard",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/05-MSIA520M-AProMotherboard.webp",
-            "itemName":"MSI A520M-A Pro Motherboard",
-            "itemPrice":24000.00,
-            "itemDiscount":"0"
-        },
-        {
-            "itemNo":"p24",
-            "itemClass":"motherboard",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/06-MSIMAGB650Tomahawk(WIFI)DDR5Motherboard.webp",
-            "itemName":"MSI MAG B650 Tomahawk (WIFI) DDR5 Motherboard",
-            "itemPrice":93000.00,
-            "itemDiscount":"0"
         }
     ],
 
@@ -242,6 +98,153 @@
             "imgSrc":"./Stylesheets/Images/Console-Images/PS-5-Pro_Console-2TB.webp",
             "itemName":"PS 5 proConsole",
             "itemPrice":301800.00,
+            "itemDiscount":"0"
+        }
+    ],
+
+    "Accessories":[
+        {
+            "itemNo":"a1",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/01-AMD-Ryzen_5_56000X.webp",
+            "itemName":"AMD Ryzen 5 5600X",
+            "itemPrice":43000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a2",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/06-AMD_Ryzen_5_8600G.webp",
+            "itemName":"AMD Ryzen 5 8600G",
+            "itemPrice":56500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a3",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/02-AMD-Ryzen_7_7800X3D.webp",
+            "itemName":"AMD Ryzen 7 7800X3D",
+            "itemPrice":161500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a4",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/03-Intel_Core_i3_14100.webp",
+            "itemName":"Intel Core i3 14100",
+            "itemPrice":41000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a5",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/04-IntelCore_i5_14400.webp",
+            "itemName":"Intel Core i5 14400",
+            "itemPrice":56000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a6",
+            "itemClass":"processor",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/processors/05-IntelCore_i7_12700.webp",
+            "itemName":"Intel Core i7 12700",
+            "itemPrice":80500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a7",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/01-Crosair Dominator_Platinum_RGB_32GB.webp",
+            "itemName":"Crosair Dominator Platinum RGB 32GB",
+            "itemPrice":39500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a8",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/02-CrosairDominatorTiitatium_RGB_32GB.webp",
+            "itemName":"Crosair Dominator Titanium RGB 32GB",
+            "itemPrice":65000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a9",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/03-Adata_XPG_Gammix_16GB.webp",
+            "itemName":"Adata XPG Gammix 16GB",
+            "itemPrice":13500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a10",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/04-CrosairVengeance_32GB.webp",
+            "itemName":"Crosair Vengeance 32GB",
+            "itemPrice":11500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a11",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/05-CrosairVengeance_RGB_LPX_16GB.webp",
+            "itemName":"Crosair Vengeance RGB LPX 16GB",
+            "itemPrice":19500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a12",
+            "itemClass":"ram",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/rams/06-CrosairVengeance_RGB_64GB(2x32).webp",
+            "itemName":"Crosair Vengeance RGB 64GB(2x32)",
+            "itemPrice":83000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a13",
+            "itemClass":"motherboard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/01-AsusRogStrix-Z790(DDR5)Motherboard.webp",
+            "itemName":"Asus Rog Strix Z790 (DDR5) Motherboard",
+            "itemPrice":175000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a14",
+            "itemClass":"motherboard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/02-AsusTufGamingB550-PluswifiMotherboard.webp",
+            "itemName":"Asus Tuf Gaming B550 Plus WIFI Motherboard",
+            "itemPrice":77000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a15",
+            "itemClass":"motherboard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/03-AsusPrime-B550M-A_II_DDR4Motherboard.webp",
+            "itemName":"Asus Prime B550M-A II DDR4 Motherboard",
+            "itemPrice":55500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a16",
+            "itemClass":"motherboard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/04-AsusPrimeA520M-K(DDR4)MircoATXMotherboard.webp",
+            "itemName":"Asus PrimeA 520M-K (DDR4) Mirco ATX Motherboard",
+            "itemPrice":32000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a17",
+            "itemClass":"motherboard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/05-MSIA520M-AProMotherboard.webp",
+            "itemName":"MSI A520M-A Pro Motherboard",
+            "itemPrice":24000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a18",
+            "itemClass":"motherboard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/06-MSIMAGB650Tomahawk(WIFI)DDR5Motherboard.webp",
+            "itemName":"MSI MAG B650 Tomahawk (WIFI) DDR5 Motherboard",
+            "itemPrice":93000.00,
             "itemDiscount":"0"
         }
     ]

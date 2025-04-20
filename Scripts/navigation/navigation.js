@@ -66,26 +66,26 @@ router.addEventListener("click", () => {
 })
 
 processor.addEventListener("click", () => {
-    window.location.href="peripherals.html"
+    window.location.href="./Accessories.html"
     localStorage.setItem("filterValue", "filterProcessor");
 })
 
 ram.addEventListener("click", () => {
-    window.location.href="peripherals.html"
+    window.location.href="./Accessories.html"
     localStorage.setItem("filterValue", "filterRam");
 })
 
 motherboard.addEventListener("click", () => {
-    window.location.href="peripherals.html"
+    window.location.href="./Accessories.html"
     localStorage.setItem("filterValue", "filterMotherboard");
 })
 
 graphicCard.addEventListener("click", () => {
-    window.location.href="peripherals.html"
+    window.location.href="./Accessories.html"
     localStorage.setItem("filterValue", "filterGraphicCard");
 })
 
 storage.addEventListener("click", () => {
-    window.location.href="peripherals.html"
+    window.location.href="./Accessories.html"
     localStorage.setItem("filterValue", "filterStorage");
 })

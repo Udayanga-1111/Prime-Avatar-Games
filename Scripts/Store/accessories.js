@@ -20,33 +20,55 @@ const addToHtml = function () {
     })
 
     let filterKey = localStorage.getItem("filterValue");
+    const slotName = document.querySelector(".slot-name");
     const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
         card.style.display = "none"; // Hide all items by default
     })
 
     switch (true) {
-        case (filterKey == "filterPS"):
+        case (filterKey == "filterProcessor"):
             cards.forEach(card => {
-                if (card.classList.contains("ps")) {
+                if (card.classList.contains("processor")) {
                     card.style.display = "flex"; // Show keyboard items
                 }
             });
+            slotName.innerHTML = "Processors";
             break;
-        
-        case (filterKey == "filterXbox"):
+        case (filterKey == "filterRam"):
             cards.forEach(card => {
-                if (card.classList.contains("xbox")) {
+                if (card.classList.contains("ram")) {
                     card.style.display = "flex"; // Show mouse items
                 }
             });
+            slotName.innerHTML = "Memory Cards";
             break;
-        case (filterKey == "filterPlays"):
+        case (filterKey == "filterMotherboard"):
             cards.forEach(card => {
-                if (card.classList.contains("plays")) {
+                if (card.classList.contains("motherboard")) {
+                    
                     card.style.display = "flex"; // Show monitor items
                 }
             });
+            slotName.innerHTML = "Motherboards";
+            break;
+        
+        case (filterKey == "filterGraphicCard"):
+            cards.forEach(card => {
+                if (card.classList.contains("graphicCard")) {
+                    card.style.display = "flex"; // Show router items
+                }
+            });
+            slotName.innerHTML = "Graphics Cards";
+            break;
+        
+        case (filterKey == "filterStorage"):
+            cards.forEach(card => {
+                if (card.classList.contains("storage")) {
+                    card.style.display = "flex"; // Show router items
+                }
+            });
+            slotName.innerHTML = "Storage Devices";
             break;
         
         case(filterKey=="filterAll"):
@@ -62,7 +84,7 @@ const initApp = () => {
     fetch('./Scripts/Store/items.json') // Ensure the file is in the root directory of the server
         .then(response => response.json())
         .then(data => {
-            abc.push(...data.consoles); // Spread operator to push all items into the array
+            abc.push(...data.Accessories); // Spread operator to push all items into the array
             
             addToHtml();
         })

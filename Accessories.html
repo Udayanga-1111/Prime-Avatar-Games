@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Avatar/Peripherals</title>
+    <link rel="stylesheet" href="./Stylesheets/Reset css.css">
+    <link rel="stylesheet" href="./Stylesheets/style2.css">
+    <link rel="stylesheet" href="./Stylesheets/accessories-style.css">
+
+    <script src="./Scripts/Animations/Hamburger.js" defer></script>
+    <script src="./Scripts/Animations/homeAnimation.js" defer></script>
+    <script src="./Scripts/Store/accessories.js" defer></script>
+    <script src="./Scripts/Store/cartNotify.js" defer></script>
+    <script src="./Scripts/Store/searchbar.js" defer></script>
+    <script src="./Scripts/navigation/navigation.js" defer></script> <!--for the navigation bar-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <section id="logonav">
+
+            <!-- LOGO -->
+            <img id="logo" src="./Stylesheets/Images/Logo_Prime_Aavatar.Webp" alt="logo">
+
+        </section>
+
+        <nav>
+        
+            <!-- Search bar -->
+            <form id="search_bar">
+        
+                <input type="text" id="search" placeholder="Search">
+        
+                <button id="searchbutton" type="submit">
+        
+                    <img class="icons_3" src="./Stylesheets/Images/search-interface-symbol.png">
+        
+                </button>
+        
+            </form>
+        
+            <!-- menu list -->
+            <ol class="navigation olbasic">
+        
+                <li><a class="navLinks" href="./index.html">Home</a></li>
+                <li><a class="navLinks" href="./About-us.html">About us</a></li>
+                <li><a class="navLinks" href="./Games.html">Games</a></li>
+                <li><a class="navLinks" href="./Upcoming-Games.html">Upcoming Games</a></li>
+                <li id="drop">
+                    <a class="selected3 navLinks">Store</a>
+        
+                    <ol class="olbasic" id="dropdown">
+                        <li id="consoleLink">
+                            <a href="./Consoles.html" id="consoleLink" onclick="setDefault()">&rarr; Consoles</a>
+        
+                            <div id="consoleFilterContainer" class="filterContainer">
+                                <button id="psFilter">Play Stations</button>
+                                <button id="xboxFilter">X box</button>
+                                <button id="playsFilter">Plays</button>
+                            </div>
+                        </li>
+        
+                        <li id="periLink">
+                            <a href="./Peripherals.html" id="peripheralsLink" onclick="setDefault()">&rarr; Peripherals</a>
+        
+                            <div id="peripheralsFilterContainer" class="filterContainer">
+                                <div class="subFilterSections">
+                                    <button id="keyboardFilter">Keyboards</button>
+                                    <button id="mouseFilter">Mouse</button>
+                                    <button id="chairFilter">Chairs</button>
+                                    <button id="simulatorFilter">Simulator</button>
+                                </div>
+                                <div class="subFilterSections">
+                                    <button id="monitorFilter">Monitors</button>
+                                    <button id="routerFilter">Routers</button>
+                                </div>
+                            </div>
+        
+                        </li>
+                        <li id="accLink">
+                            <a href="./Accessories.html" onclick="setDefault()">&rarr; Accessories</a>
+        
+                            <div id="accessoriesFilterContainer" class="filterContainer">
+                                <div class="subFilterSections">
+                                    <button id="processorFilter">Processors</button>
+                                    <button id="ramFilter">Memory Cards</button>
+                                    <button id="motherboardFilter">Motherboards</button>
+                                </div>
+                                <div class="subFilterSections">
+                                    <button id="graphicCardFilter">Graphic Cards</button>
+                                    <button id="storageFilter">Storage Devices</button>
+                                </div>
+                            </div>
+        
+                        </li>
+                    </ol>
+        
+                </li>
+        
+                <li><a class="navLinks" href="./Faq.html">FAQs</a></li>
+        
+            </ol>
+        
+        </nav>
+
+        <!-- Login and Sign in -->
+        <section id="loginsec">
+
+            <ol id="loginnav" class="olbasic">
+
+                <li id="cartli">
+                    <a href="./cart.html">
+                        <svg id="cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                
+                        <span id="cartNotification">0</span>
+
+                    </a>
+                </li>
+
+                <li class="hover"><a href="./Sign-in.html"><svg id="profile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg></a></li>
+            </ol>
+
+
+            <!-- --------------------------------------- menu button and menu ---------------------------------------------------------------------------- -->
+
+            <button id="open-sidebar-button">
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+            </button>
+
+            <section class="links-container">
+
+                <button id="close-sidebar-button">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+
+                </button>
+
+                <a href="./Sign-in.html">
+
+                    <section id="profile-section">
+
+                        <svg id="profile-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+
+                        <p>Profile</p>
+
+                    </section></a>
+                <hr>
+                <a id="selected" href="./index.html">Home</a>
+                <a href="./About-us.html">About us</a>
+                <a href="./Games.html">Games</a>
+                <a href="./Upcoming-Games.html">Upcoming Games</a>
+                <a href="./Consoles.html">Consoles</a>
+                <a href="./Peripherals.html">Peripherals</a>
+                <a href="./Faq.html">Faq</a>
+                <hr>
+                <a href="./cart.html">Cart</a>
+
+            </section>
+
+
+        </section>
+
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <section class="slideshow">
+
+            <section class="container">
+                <div id="game1"><a href="#store"></a></div>
+                <div id="game2"><a href="#store"></a></div>
+                <div id="game3"><a href="#store"></a></div>
+                <div id="game4"><a href="#store"></a></div>
+                <div id="game5"><a href="#store"></a></div>
+            </section>
+
+        </section>
+
+        <section class="store-content" id="store">
+            
+            <section class="items">
+
+                <section class="item-slot">
+
+                    <h1 class="slot-name">Explore Quality Accessories</h1>
+
+                    <section class="item-list">
+                    </section>
+
+                    <h5 id="page-no">page 1 of 1</h5>
+
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <section id="footer-top">
+            <!-- Footer left -->
+            <section id="footer_left">
+    
+                <!-- Social media list -->
+                <ol id="social" class="olbasic">
+    
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a></li>
+    
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+    
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a></li>
+    
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a></li>
+    
+                </ol>
+    
+            </section>
+    
+            <!-- footer middle -->
+            <section id="footer_menu">
+    
+                <ol class="olbasic" id="footerol">
+    
+                    <li><a href="./index.html">Home</a></li>
+    
+                    <li><a href="./About-us.html">About Us</a></li>
+    
+                    <li><a href="./Upcoming-Games.html">Upcoming Games</a></li>
+    
+                    <li><a href="./Games.html">Games</a></li>
+    
+                    <li><a href="./Consoles.html">Consoles</a></li>
+    
+                    <li><a class="selected" href="./Peripherals.html">Peripherals</a></li>
+                    
+                    <li><a href="./Faq.html">Queries & FAQs</a></li>
+    
+    
+                </ol>
+            </section>
+    
+            <section id="footer2">
+    
+                <ol class="olbasic" id="footerol2">
+    
+                    <li><a href="./index.html">Home</a></li>
+    
+                    <li><a href="./About-us.html">About Us</a></li>
+    
+                    <li><a href="./Faq.html">Queries & FAQs</a></li>
+    
+                    <li><a href="./Store.html">Store</a></li>
+    
+                </ol>
+            </section>
+    
+            <!-- Footer right-->
+            <section id="footer_right">
+
+                <a id="b-top" href="#">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                    </svg>
+
+                    <h6>Back to the top</h6>
+
+                </a>
+            </section>
+
+    </section>
+
+    <section id="footer-bottom">
+        
+        <section class="updates">
+            <h2 class="footer-titles">Updates</h2>
+            <a href="#">Announcements</a>
+            <a href="#">Top News</a>
+            <a href="#">Resources</a>
+            <a href="#">Partners</a>
+        </section>
+
+        <section class="services">
+            <h2 class="footer-titles">Sevices</h2>
+            <a href="#">Customer Support</a>
+            <a href="#">Refund Polices</a>
+            <a href="#"></a>
+        </section>
+
+        <section class="payments">
+
+            <h2 class="footer-titles">Payments</h2>
+
+            <section class="pay">
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2 .3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4 .2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2 .2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2 .1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z"/></svg></a>
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M111.4 295.9c-3.5 19.2-17.4 108.7-21.5 134-.3 1.8-1 2.5-3 2.5H12.3c-7.6 0-13.1-6.6-12.1-13.9L58.8 46.6c1.5-9.6 10.1-16.9 20-16.9 152.3 0 165.1-3.7 204 11.4 60.1 23.3 65.6 79.5 44 140.3-21.5 62.6-72.5 89.5-140.1 90.3-43.4 .7-69.5-7-75.3 24.2zM357.1 152c-1.8-1.3-2.5-1.8-3 1.3-2 11.4-5.1 22.5-8.8 33.6-39.9 113.8-150.5 103.9-204.5 103.9-6.1 0-10.1 3.3-10.9 9.4-22.6 140.4-27.1 169.7-27.1 169.7-1 7.1 3.5 12.9 10.6 12.9h63.5c8.6 0 15.7-6.3 17.4-14.9 .7-5.4-1.1 6.1 14.4-91.3 4.6-22 14.3-19.7 29.3-19.7 71 0 126.4-28.8 142.9-112.3 6.5-34.8 4.6-71.4-23.8-92.6z"/></svg></a>
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M116.9 158.5c-7.5 8.9-19.5 15.9-31.5 14.9-1.5-12 4.4-24.8 11.3-32.6 7.5-9.1 20.6-15.6 31.3-16.1 1.2 12.4-3.7 24.7-11.1 33.8m10.9 17.2c-17.4-1-32.3 9.9-40.5 9.9-8.4 0-21-9.4-34.8-9.1-17.9 .3-34.5 10.4-43.6 26.5-18.8 32.3-4.9 80 13.3 106.3 8.9 13 19.5 27.3 33.5 26.8 13.3-.5 18.5-8.6 34.5-8.6 16.1 0 20.8 8.6 34.8 8.4 14.5-.3 23.6-13 32.5-26 10.1-14.8 14.3-29.1 14.5-29.9-.3-.3-28-10.9-28.3-42.9-.3-26.8 21.9-39.5 22.9-40.3-12.5-18.6-32-20.6-38.8-21.1m100.4-36.2v194.9h30.3v-66.6h41.9c38.3 0 65.1-26.3 65.1-64.3s-26.4-64-64.1-64h-73.2zm30.3 25.5h34.9c26.3 0 41.3 14 41.3 38.6s-15 38.8-41.4 38.8h-34.8V165zm162.2 170.9c19 0 36.6-9.6 44.6-24.9h.6v23.4h28v-97c0-28.1-22.5-46.3-57.1-46.3-32.1 0-55.9 18.4-56.8 43.6h27.3c2.3-12 13.4-19.9 28.6-19.9 18.5 0 28.9 8.6 28.9 24.5v10.8l-37.8 2.3c-35.1 2.1-54.1 16.5-54.1 41.5 .1 25.2 19.7 42 47.8 42zm8.2-23.1c-16.1 0-26.4-7.8-26.4-19.6 0-12.3 9.9-19.4 28.8-20.5l33.6-2.1v11c0 18.2-15.5 31.2-36 31.2zm102.5 74.6c29.5 0 43.4-11.3 55.5-45.4L640 193h-30.8l-35.6 115.1h-.6L537.4 193h-31.6L557 334.9l-2.8 8.6c-4.6 14.6-12.1 20.3-25.5 20.3-2.4 0-7-.3-8.9-.5v23.4c1.8 .4 9.3 .7 11.6 .7z"/></svg></a>
+    
+            </section>
+        </section>
+
+        <section class="contacts">
+            <h2 class="footer-titles">Contacts</h2>
+            <li class="olbasic">Hotline- 07#-#######</li>
+            <a href="#">Address</a>
+            <a href="#">primeavatar_support@gmail.com</a>
+        </section>
+    </section>
+
+    <section class="footer-pics">
+
+        <img src="./Stylesheets/Images/Logo_Prime_Aavatar.Webp" alt="logo"
+        id="logo">
+
+        <div class="download">
+
+            <img src="./Stylesheets/Images/Get-it-on-google-play.Webp" alt="Google play" class="get">
+
+            <img src="./Stylesheets/Images/Get-it-on-apple-store.Webp" alt="Apple store" class="get">
+
+        </div>
+    </section>
+
+    <section class="copyright">
+        <section class="sub-footer">
+            <a href="#">Terms of services</a>
+            <a href="#">Privacy and policies</a>
+            <small>&copy;Prime Avatar Cooporations</small>
+        </section>
+    </section>
+    </footer>
+</body>
+
+</html>
