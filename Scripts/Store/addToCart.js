@@ -16,6 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // get the cart from local storage =============================================================
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    // Default disabled Buttons ====================================================================
+    if (cart.length <= 0) {
+        addToFavBtn.disabled = true;
+        addToFavBtn.style.cursor = "not-allowed";
+    }
+
+    
+    let favCart = JSON.parse(localStorage.getItem("favCart")) || [];
+    if (favCart.length <= 0) {
+        applyFavBtn.disabled = true;
+        applyFavBtn.style.cursor = "not-allowed";
+    }
+
     if (cart.length > 0) {
         cartStatus.style.display="none";
     }

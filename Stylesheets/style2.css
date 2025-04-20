@@ -204,6 +204,10 @@ nav{
     list-style: none;
 }
 
+#drop a:hover{
+    cursor: pointer;
+}
+
 #drop:hover #dropdown{
     display: block !important;
 }
