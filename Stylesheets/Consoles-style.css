@@ -27,6 +27,10 @@ main{
     gap: 10px;
 }
 
+#consoleLink{
+    color: var(--accent-color);
+}
+
 /*=====Slideshow part=========================================================*/
 
 .slideshow{

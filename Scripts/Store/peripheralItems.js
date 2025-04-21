@@ -22,6 +22,13 @@ const addToHtml = function () {
     let filterKey = localStorage.getItem("filterValue");
     const slotName = document.querySelector(".slot-name");
     const cards = document.querySelectorAll(".card");
+    const mouse = document.getElementById("mouseFilter");
+    const monitor = document.getElementById("monitorFilter");
+    const router = document.getElementById("routerFilter");
+    const chair = document.getElementById("chairFilter");
+    const simulator = document.getElementById("simulatorFilter")
+    const keyboard = document.getElementById("keyboardFilter");
+    
     cards.forEach(card => {
         card.style.display = "none"; // Hide all items by default
     })
@@ -33,6 +40,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show keyboard items
                 }
             });
+            keyboard.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Keyboards";
             break;
         case (filterKey == "filterMouse"):
@@ -41,6 +49,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show mouse items
                 }
             });
+            mouse.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Mouses";
             break;
         case (filterKey == "filterMonitor"):
@@ -50,6 +59,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show monitor items
                 }
             });
+            monitor.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Monitors";
             break;
         
@@ -59,6 +69,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show router items
                 }
             });
+            router.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Routers";
             break;
         
@@ -68,6 +79,7 @@ const addToHtml = function () {
                         card.style.display = "flex"; // Show router items
                     }
                 });
+                chair.style.color = "rgb(82, 220, 238)";
                 slotName.innerHTML = "Chairs";
                 break;
         
@@ -77,6 +89,7 @@ const addToHtml = function () {
                         card.style.display = "flex"; // Show router items
                     }
                 });
+                simulator.style.color = "rgb(82, 220, 238)";
                 slotName.innerHTML = "Simulators";
                 break;
         

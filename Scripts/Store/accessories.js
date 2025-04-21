@@ -22,6 +22,11 @@ const addToHtml = function () {
     let filterKey = localStorage.getItem("filterValue");
     const slotName = document.querySelector(".slot-name");
     const cards = document.querySelectorAll(".card");
+    const processor = document.getElementById("processorFilter");
+    const ram = document.getElementById("ramFilter");
+    const motherboard = document.getElementById("motherboardFilter");
+    const graphicCard = document.getElementById("graphicCardFilter");
+    const storage = document.getElementById("storageFilter");
     cards.forEach(card => {
         card.style.display = "none"; // Hide all items by default
     })
@@ -33,6 +38,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show keyboard items
                 }
             });
+            processor.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Processors";
             break;
         case (filterKey == "filterRam"):
@@ -41,6 +47,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show mouse items
                 }
             });
+            ram.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Memory Cards";
             break;
         case (filterKey == "filterMotherboard"):
@@ -50,6 +57,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show monitor items
                 }
             });
+            motherboard.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Motherboards";
             break;
         
@@ -59,6 +67,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show router items
                 }
             });
+            graphicCard.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Graphics Cards";
             break;
         
@@ -68,6 +77,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show router items
                 }
             });
+            storage.style.color = "rgb(82, 220, 238)";
             slotName.innerHTML = "Storage Devices";
             break;
         

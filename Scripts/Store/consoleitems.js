@@ -21,6 +21,9 @@ const addToHtml = function () {
 
     let filterKey = localStorage.getItem("filterValue");
     const cards = document.querySelectorAll(".card");
+    const ps = document.getElementById("psFilter");
+    const xbox = document.getElementById("xboxFilter");
+    const plays = document.getElementById("playsFilter");
     cards.forEach(card => {
         card.style.display = "none"; // Hide all items by default
     })
@@ -32,6 +35,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show keyboard items
                 }
             });
+            ps.style.color = "rgb(82, 220, 238)";
             break;
         
         case (filterKey == "filterXbox"):
@@ -40,6 +44,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show mouse items
                 }
             });
+            xbox.style.color = "rgb(82, 220, 238)";
             break;
         case (filterKey == "filterPlays"):
             cards.forEach(card => {
@@ -47,6 +52,7 @@ const addToHtml = function () {
                     card.style.display = "flex"; // Show monitor items
                 }
             });
+            plays.style.color = "rgb(82, 220, 238)";
             break;
         
         case(filterKey=="filterAll"):
