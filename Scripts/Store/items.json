@@ -202,7 +202,7 @@
         {
             "itemNo":"a13",
             "itemClass":"motherboard",
-            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/01-AsusRogStrix-Z790(DDR5)Motherboard.webp",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/01-AsusRogStrix Z790(DDR5)Motherboard.webp",
             "itemName":"Asus Rog Strix Z790 (DDR5) Motherboard",
             "itemPrice":175000.00,
             "itemDiscount":"0"
@@ -245,6 +245,102 @@
             "imgSrc":"./Stylesheets/Images/Accessory_images/motherboard/06-MSIMAGB650Tomahawk(WIFI)DDR5Motherboard.webp",
             "itemName":"MSI MAG B650 Tomahawk (WIFI) DDR5 Motherboard",
             "itemPrice":93000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a19",
+            "itemClass":"graphicCard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/GraphicCards/01-AsusDualGeforceGTX16504GBGDDR6X_OC.Webp",
+            "itemName":"Asus Dual Geforce GTX 1650 4GB GDDR6X OC Graphic Card",
+            "itemPrice":66500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a20",
+            "itemClass":"graphicCard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/GraphicCards/02-AsusDualGeforceRTX30506GBGDD6R_OC.Webp",
+            "itemName":"Asus Dual Geforce RTX3050 6GB GDDR6 OC Graphic Card",
+            "itemPrice":89000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a21",
+            "itemClass":"graphicCard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/GraphicCards/03-MSIGeforceRTX4070SuperGaming_X_12GB_GDDR6X_SLIMGraphicsCard.Webp",
+            "itemName":"MSI Geforce RTX 4070 Super Gaming X 12GB GDDR6X SLIM Graphics Card",
+            "itemPrice":350500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a22",
+            "itemClass":"graphicCard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/GraphicCards/04-MSIGeforceRTX4070TiVentusOC_3x_E1_12GB_GDDR6X.Webp",
+            "itemName":"MSI Geforce RTX 4070 Ti Ventus OC 3x E1 12GB GDDR6X Graphic Card",
+            "itemPrice":344500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a23",
+            "itemClass":"graphicCard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/GraphicCards/05-MSIGeforceRTX5070VentusOC_2X_12GB_GDDR7X_GraphicCard.Webp",
+            "itemName":"MSI Geforce RTX 5070 Ventus OC 2X 12GB GDDR7X Graphic Card",
+            "itemPrice":249500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a24",
+            "itemClass":"graphicCard",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/GraphicCards/06-MSIGeforce_RTX_5080_SUPRIM_LIQUID_SOC_16GB_GDDR7X_GraphicsCard.Webp",
+            "itemName":"MSI Geforce RTX 5080 SUPRIM LIQUID SOC 16GB GDDR7X Graphics Card",
+            "itemPrice":334000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a25",
+            "itemClass":"storage",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/StorageDevices/01-Corsair_MP600_Pro_XT_1TB_PCle_Gen4_M.2_NVME_SSD.Webp",
+            "itemName":"Corsair MP600 Pro XT 1TB PCle Gen4 M.2 NVME SSD",
+            "itemPrice":32500.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a26",
+            "itemClass":"storage",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/StorageDevices/02-Corsair_MP600_Pro_XT_2TB_PCle_Gen4_M.2_NVME_SSD.Webp",
+            "itemName":"Corsair MP600 Pro XT 2TB PCle Gen4 M.2 NVME SSD",
+            "itemPrice":58000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a27",
+            "itemClass":"storage",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/StorageDevices/03-Corsair_MP700_Pro_2TB_PCIe_Gen5_M.2_NVME_SSD.Webp",
+            "itemName":"Corsair MP700 Pro 2TB PCIe Gen5 M.2 NVME SSD",
+            "itemPrice":94000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a28",
+            "itemClass":"storage",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/StorageDevices/04-Samsung_990_Evo_2TB-PCIE_4.0_5.0_NVME_M.2_SSD.Webp",
+            "itemName":"Samsung 990 Evo 2TB PCIE 4.0/5.0 NVME M.2 SSD",
+            "itemPrice":51000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a29",
+            "itemClass":"storage",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/StorageDevices/05-Samsung_990_Pro_1TB_PCIE_4.0_NVME_M.2_SSD.Webp",
+            "itemName":"Samsung 990 Pro 1TB PCIE 4.0 NVME M.2 SSD",
+            "itemPrice":37000.00,
+            "itemDiscount":"0"
+        },
+        {
+            "itemNo":"a30",
+            "itemClass":"storage",
+            "imgSrc":"./Stylesheets/Images/Accessory_images/StorageDevices/06-Samsung_990_Pro_2TB_PCIE_4.0_NVME_M.2_SSD.Webp",
+            "itemName":"Samsung 990 Pro 2TB PCIE 4.0 NVME M.2 SSD",
+            "itemPrice":54000.00,
             "itemDiscount":"0"
         }
     ]
