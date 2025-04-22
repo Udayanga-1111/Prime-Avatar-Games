@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cart.length <= 0) {
         addToFavBtn.disabled = true;
         addToFavBtn.style.cursor = "not-allowed";
+        clearCartButton.disabled = true;
+        clearCartButton.style.cursor = "not-allowed";
     }
 
     

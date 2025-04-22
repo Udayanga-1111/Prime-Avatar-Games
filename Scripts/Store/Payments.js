@@ -17,6 +17,9 @@ const subTotal = document.getElementById("subTotal");
 const discount = document.getElementById("discount");
 const tax = document.getElementById("tax");
 
+const paymentAlert = document.getElementById("paymentAlertContainer");
+const notifyCloseBtn = document.querySelector(".notifyCloseBtn");
+
 // Default Values ==============================================================
 var payOption = "visa";
 
@@ -72,21 +75,35 @@ tax.innerText = taxTotal;
 Total.innerText = finalPrice;
 
 // Payment Alert ===============================================================
+function paymentAlertFunc() {
+    console.log("Payment Alert Function Called");
+    paymentAlert.style.display = "flex";
+}
+notifyCloseBtn.addEventListener("click", () => {
+    paymentAlert.style.display = "none";
+    window.location.href = "./cart.html";
+});
 
-// //Issue is here
+paymentAlert.addEventListener("click",()=>{
+    paymentAlert.style.display = "none";
+    window.location.href = "./cart.html";
+});
+
 payBtn.addEventListener("click", payment);
 
 function payment(event) {
-    if (payOption === "visa") {
-        if(theForm.checkValidity()) {
-            event.preventDefault();
-            alert("thanks for the payment, Your order will shipped within 3 days")
+    if (theForm.checkValidity()) {
+        event.preventDefault();
+        if (payOption === "visa") {
+            paymentAlertFunc();
+
+        } else if (payOption === "paypal") { // Reason I me this with a if statement is to add gather other payment information when paying with paypal.
+            paymentAlertFunc();
         }
-    } else if (payOption === "paypal") {
-        if (theForm.checkValidity()) {
-            event.preventDefault();
-            alert("thanks for the payment, Your order will shipped within 3 days")
-        }
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.length = 0;
+        localStorage.setItem("cart", JSON.stringify(cart));
     }
 };
 
