@@ -47,6 +47,11 @@ header{
     align-items: center;
 }
 
+#header01{
+    display: flex;
+    justify-content: space-between;
+}
+
 #header02{
     justify-content: end;
 }
@@ -62,12 +67,16 @@ header{
     padding-right: 10px;
 }
 
-#cartTitle{
+#paymentTitle{
     color: var(--accent-color);
     font-size: 40px;
 }
 
 /*--- Cart Navigation ---*/
+#cartNav01{
+    display: none;
+}
+
 .homenavi{
     font-size: 20px;
     border: 2px solid var(--subback-color);
@@ -83,6 +92,7 @@ header{
 
 .backBtn{
     background-color: transparent;
+    font-size: 20px;
     border-radius: 10px;
     border: 2px solid var(--subback-color);
     color: var(--text-color);
@@ -147,9 +157,6 @@ main{
     gap: 20px;
 }
 
-#exDate, #code{
-    width: 100px;
-}
 
 .inputSections{
     outline: none;
@@ -328,6 +335,14 @@ textarea{
         overflow-y: scroll;
     }
 
+    #cartNav02{
+        display: none;
+    }
+
+    #cartNav01{
+        display: flex;
+    }
+
     #main01{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -338,6 +353,7 @@ textarea{
         grid-column: 1/2;
         grid-row: 2/3;
         align-items: center;
+        height: 100%;
     }
 
     .formContainer{
@@ -368,15 +384,75 @@ textarea{
     }
     #paymentForm{
         width: 90%;
+        height: auto;
     }
     #personalDetails ,#paypalPaymentDetails, #visaPaymentDetails,#paymentOptions{
         width: 100%;
         align-items: center;
+        height: fit-content;
+    }
+    #paymentOptions{
+        justify-content: space-between;
     }
 
     .inputSections{
         max-width: 30vw;
-        min-width: 30vw;
+        min-width: 250px;
         width: 30vw;
+    }
+
+    #exDate, #code{
+        min-width: 50px;
+        max-width: 100px;
+    }
+}
+
+@media (max-width:550px) {
+    .logoSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #paymentTitle{
+        display: none;
+    }
+
+    #logo{
+        width: 150px;
+        height: 50px;
+    }
+
+    #paymentForm{
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #paymentOptions p label{
+        font-size: 16px;
+        height: 40px;
+        width: 170px;
+    }
+    #cardDetails{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #cardDetails p{
+        justify-content: space-between;
+    }
+
+    .backBtn{
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+
+    .homenavi{
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+
+    .cartnav{
+        display: flex;
+        gap: 50px;
     }
 }
