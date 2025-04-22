@@ -209,6 +209,10 @@ textarea{
     gap: 30px;
 }
 
+#exDate, #code{
+    width: 100px;
+}
+
 #paypalPaymentDetails, #visaPaymentDetails{
     display: none;
 }
@@ -349,6 +353,10 @@ textarea{
         align-items: center;
     }
 
+    .orderInfoContainer{
+        align-items: center;
+    }
+
     #main02{
         grid-column: 1/2;
         grid-row: 2/3;
@@ -379,6 +387,10 @@ textarea{
 }
 
 @media (max-width:880px) {
+    #paymentTitle{
+        display: none;
+    }
+
     .formContainer{
         width: 100vw;
     }
@@ -413,13 +425,14 @@ textarea{
         flex-direction: column;
     }
 
-    #paymentTitle{
-        display: none;
-    }
-
     #logo{
         width: 150px;
         height: 50px;
+    }
+
+    .orderInfoContainer{
+        width: 100%;
+        align-items: center;
     }
 
     #paymentForm{
@@ -430,7 +443,7 @@ textarea{
     #paymentOptions p label{
         font-size: 16px;
         height: 40px;
-        width: 170px;
+        width: 150px;
     }
     #cardDetails{
         flex-direction: column;
@@ -440,6 +453,7 @@ textarea{
     #cardDetails p{
         justify-content: space-between;
     }
+
 
     .backBtn{
         font-size: 14px;
@@ -454,5 +468,9 @@ textarea{
     .cartnav{
         display: flex;
         gap: 50px;
+    }
+    .inputSections{
+        min-width: 200px;
+        width: 200px;
     }
 }
