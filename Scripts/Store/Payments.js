@@ -94,6 +94,7 @@ payBtn.addEventListener("click", payment);
 function payment(event) {
     if (theForm.checkValidity()) {
         event.preventDefault();
+        window.location.href = "#";
         if (payOption === "visa") {
             paymentAlertFunc();
 
