@@ -244,6 +244,8 @@ main{
 /*--- Checkout Button ---*/
 
 .checkoutbtn{
+    color: var(--text-color);
+    background-color: transparent;
     width: 26vw;
     height: 75px;
     border: 2px solid var(--subback-color);
@@ -260,6 +262,10 @@ main{
 
     position: absolute;
     bottom: 20px;
+}
+
+.checkoutbtn:hover{
+    cursor: pointer;
 }
 
 .checkoutbtn span::before{

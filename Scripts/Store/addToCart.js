@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Get the references for interactive elements =================================================
     const cartTable = document.getElementById("cartTableBody");
     const cartStatus = document.querySelector(".cartStatus");
+    const checkoutBtn = document.querySelector(".checkoutbtn");
     const clearCartButton = document.getElementById("clearCartBtn");
     const addToFavBtn = document.getElementById("addToFavBtn");
     const applyFavBtn = document.getElementById("applyFavBtn");
@@ -22,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
         addToFavBtn.style.cursor = "not-allowed";
         clearCartButton.disabled = true;
         clearCartButton.style.cursor = "not-allowed";
+        checkoutBtn.disabled = true;
+        checkoutBtn.style.cursor = "not-allowed";
     }
 
     
@@ -87,6 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("Tax", taxAmount);
         localStorage.setItem("Total", totalAmount);
     });
+
+    // Handle checkout functionality ===============================================================
+    checkoutBtn.addEventListener("click", () => {
+        window.location.href = "./payment.html";
+    });
+        
 
     // Handle remove item functionality ============================================================
     document.querySelectorAll(".removeItem").forEach((button) => {
