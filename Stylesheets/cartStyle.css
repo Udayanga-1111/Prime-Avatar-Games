@@ -188,7 +188,7 @@ main{
     font-size: 15px;
     background-color: transparent;
     border: none;
-    font-weight: 400px;
+    font-weight: 400;
     color: var(--accent-color);
 }
 
