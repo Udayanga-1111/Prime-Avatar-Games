@@ -215,7 +215,7 @@ main{
 
     .card .item-pic{
         width: 100px;
-        height: 50%;
+        height: 100px;
         border-radius: 15px 15px 0 0;
     }
 
