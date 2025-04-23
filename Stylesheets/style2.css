@@ -247,7 +247,7 @@ nav{
     flex-direction: column;
 }
 
-#consoleLink:hover #consoleFilterContainer{
+#conLink:hover #consoleFilterContainer{
     display: flex;
 }
 
@@ -372,7 +372,7 @@ footer{
 }
 
 
-#social li a svg{
+#social li svg{
     width: 25px;
     fill: rgb(255, 255, 255);
 }
@@ -718,7 +718,7 @@ header #loginsec .links-container a:hover{
     transition: .2s ease-out;
 }
 
-#social li a svg:hover{
+#social li svg:hover{
     fill:var(--accent-color);
 }
 
