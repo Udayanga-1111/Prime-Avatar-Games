@@ -340,7 +340,7 @@ h2{
     .card{
         width: 34vw;
         height: 45vw;
-        padding: o;
+        padding: 0;
     }
 
     .card-details{
